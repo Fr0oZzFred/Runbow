@@ -47,11 +47,11 @@ public class SpawnBrackgroundManager : MonoBehaviour
 
     GameObject SelectionOfColor(int numberOfColor)
     {
-        while(oldBK == selection)
+        /*while(oldBK == selection)
         {
             selection = antiInfiniteLoop(numberOfColor);
             Debug.Log(selection);
-        }
+        }*/
         switch(selection)
         {
             case 0:
@@ -67,10 +67,10 @@ public class SpawnBrackgroundManager : MonoBehaviour
         }
     }
 
-    int antiInfiniteLoop(int numberOfColor)
+    /*int antiInfiniteLoop(int numberOfColor)
     {
         int ret = Random.Range(0, numberOfColor);
         return ret;
-    }
+    }*/
 
 }

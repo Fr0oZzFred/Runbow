@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnBrackgroundManager : MonoBehaviour
+public class SpawnBackgroundManager : MonoBehaviour
 {
     public GameObject blue;
     public GameObject green;
@@ -13,9 +13,8 @@ public class SpawnBrackgroundManager : MonoBehaviour
     public int selection;
     int oldBK = -1;
 
-    private static SpawnBrackgroundManager _instance;
-
-    public static SpawnBrackgroundManager instance
+    private static SpawnBackgroundManager _instance;
+    public static SpawnBackgroundManager instance
     {
         get
         {
@@ -39,19 +38,19 @@ public class SpawnBrackgroundManager : MonoBehaviour
 
     }
 
-    void Spawn(GameObject couleur)
+    public void Spawn(GameObject couleur)
     {
         Vector3 position = this.transform.position;
         BK = Instantiate(couleur, position, Quaternion.identity);
     }
 
-    GameObject SelectionOfColor(int numberOfColor)
+    public GameObject SelectionOfColor(int numberOfColor)
     {
         while(oldBK == selection)
         {
-            selection = antiInfiniteLoop(numberOfColor);
-            Debug.Log(selection);
+            selection = AntiInfiniteLoop(numberOfColor);
         }
+        oldBK = selection;
         switch(selection)
         {
             case 0:
@@ -67,7 +66,7 @@ public class SpawnBrackgroundManager : MonoBehaviour
         }
     }
 
-    int antiInfiniteLoop(int numberOfColor)
+    int AntiInfiniteLoop(int numberOfColor)
     {
         int ret = Random.Range(0, numberOfColor);
         return ret;

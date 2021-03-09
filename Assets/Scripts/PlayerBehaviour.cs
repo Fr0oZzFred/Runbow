@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
-    // Start is called before the first frame update
     
     public enum Move
     {
@@ -22,18 +21,34 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
+    public enum ColorState
+    {
+        Blue,
+        Green,
+        Red,
+        Yellow,
+    }
+    private static ColorState _color;
+    public static ColorState color
+    {
+        get
+        {
+            return _color;
+        }
+    }
+
     void Start()
     {
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
+        ChangeColor();
     }
 
     void ChangeMove(Move state)
@@ -57,7 +72,7 @@ public class PlayerBehaviour : MonoBehaviour
         rigidbody2d.velocity = new Vector2(0.0f, 7.0f);
     }
 
-    public void OnCollisionEnter2d(Collision collider)
+    public void OnCollisionEnter2d(Collision collision)
     {
         Run();
     }
@@ -65,5 +80,49 @@ public class PlayerBehaviour : MonoBehaviour
     void Run()
     {
         Debug.Log("Running");
+    }
+
+    void ChangeColorState(ColorState colorState)
+    {
+        _color = colorState;
+        switch (_color)
+        {
+            case ColorState.Blue:
+                Debug.Log("Blue");
+                break;
+            case ColorState.Green:
+                Debug.Log("Green");
+                break;
+            case ColorState.Red:
+                Debug.Log("Red");
+                break;
+            case ColorState.Yellow:
+                Debug.Log("Yellow");
+                break;
+        }
+    }
+    
+    void ChangeColor()
+    {
+        float blue = Input.GetAxis("Blue");
+        float green = Input.GetAxis("Green");
+        float red = Input.GetAxis("Red");
+        float yellow = Input.GetAxis("Yellow");
+        if(blue == 1)
+        {
+            ChangeColorState(ColorState.Blue);
+        }
+        else if(green == 1)
+        {
+            ChangeColorState(ColorState.Green);
+        }
+        else if (red == 1)
+        {
+            ChangeColorState(ColorState.Red);
+        }
+        else if (yellow == 1)
+        {
+            ChangeColorState(ColorState.Yellow);
+        }
     }
 }

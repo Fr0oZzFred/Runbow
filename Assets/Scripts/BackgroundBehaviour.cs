@@ -15,7 +15,7 @@ public class BackgroundBehaviour : MonoBehaviour
     void Update()
     {
         Move();
-        if(transform.position.magnitude < 10 && !done )
+        if(transform.position.magnitude < 5 && !done )
         {
             SpawnBackgroundManager.instance.Spawn(SpawnBackgroundManager.instance.SelectionOfColor(SpawnBackgroundManager.instance.numberOfBK));
             done = true;

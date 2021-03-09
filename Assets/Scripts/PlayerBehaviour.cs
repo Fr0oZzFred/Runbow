@@ -49,6 +49,7 @@ public class PlayerBehaviour : MonoBehaviour
             Jump();
         }
         ChangeColor();
+        Debug.Log(SpawnBackgroundManager.instance.BK);
     }
 
     void ChangeMove(Move state)

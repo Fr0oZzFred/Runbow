@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3275034759309055329}
   - component: {fileID: -2147734910851239858}
   m_Layer: 0
-  m_Name: Final Fantasy VII Remake Sephiroth (3840 x 2160)
+  m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,3 +95,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  color: 2

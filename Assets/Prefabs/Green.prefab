@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5413887329928173507}
   - component: {fileID: -2907070510213127261}
   m_Layer: 0
-  m_Name: Final Fantasy VII Remake Tifa (3840 x 2160)
+  m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,3 +95,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  color: 1

@@ -8,7 +8,7 @@ public class SpawnBackgroundManager : MonoBehaviour
     public GameObject green;
     public GameObject red;
     public GameObject yellow;
-    static GameObject BK;
+    public GameObject BK;
     public int numberOfBK;
     public int selection;
     int oldBK = -1;

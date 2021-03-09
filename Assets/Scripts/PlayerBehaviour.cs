@@ -28,8 +28,8 @@ public class PlayerBehaviour : MonoBehaviour
         Red,
         Yellow,
     }
-    private ColorState _color;
-    public ColorState color
+    private static ColorState _color;
+    public static ColorState color
     {
         get
         {
@@ -49,7 +49,6 @@ public class PlayerBehaviour : MonoBehaviour
             Jump();
         }
         ChangeColor();
-        Debug.Log(SpawnBackgroundManager.instance.BK);
     }
 
     void ChangeMove(Move state)
@@ -73,7 +72,7 @@ public class PlayerBehaviour : MonoBehaviour
         rigidbody2d.velocity = new Vector2(0.0f, 7.0f);
     }
 
-    public void OnCollisionEnter2d(Collision collider)
+    public void OnCollisionEnter2d(Collision collision)
     {
         Run();
     }

@@ -8,7 +8,6 @@ public class SpawnBackgroundManager : MonoBehaviour
     public GameObject green;
     public GameObject red;
     public GameObject yellow;
-    public GameObject BK;
     public int numberOfBK;
     public int selection;
     int oldBK = -1;
@@ -41,7 +40,8 @@ public class SpawnBackgroundManager : MonoBehaviour
     public void Spawn(GameObject couleur)
     {
         Vector3 position = this.transform.position;
-        BK = Instantiate(couleur, position, Quaternion.identity);
+        GameObject BK = Instantiate(couleur, position, Quaternion.identity);
+        BackgroundBehaviour BKS = BK.GetComponent<BackgroundBehaviour>();
     }
 
     public GameObject SelectionOfColor(int numberOfColor)

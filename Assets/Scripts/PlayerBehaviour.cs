@@ -32,7 +32,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            ChangeMove(Move.Jump);
         }
     }
 
@@ -57,13 +57,13 @@ public class PlayerBehaviour : MonoBehaviour
         rigidbody2d.velocity = new Vector2(0.0f, 7.0f);
     }
 
-    public void OnCollisionEnter2d(Collision collider)
+    public void OnCollisionEnter2D(Collision2D collider)
     {
-        Run();
+        ChangeMove(Move.Run);
     }
 
     void Run()
     {
-        Debug.Log("Running");
+        
     }
 }

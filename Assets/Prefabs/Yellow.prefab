@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  blue: 0
+  green: 0
+  red: 0
+  yellow: 1
 --- !u!61 &-2236519985089910570
 BoxCollider2D:
   m_ObjectHideFlags: 0

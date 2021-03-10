@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
         Death,
     }
     private static GameState _gameState;
-    public static GameState gameState
+    public static GameState GameStates
     {
         get
         {

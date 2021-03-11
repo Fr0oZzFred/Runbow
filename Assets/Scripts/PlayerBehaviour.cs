@@ -28,12 +28,12 @@ public class PlayerBehaviour : MonoBehaviour
         Red,
         Yellow,
     }
-    private static ColorState _color;
-    public static ColorState color
+    private ColorState _colorState;
+    public ColorState ColorStates
     {
         get
         {
-            return _color;
+            return _colorState;
         }
     }
 
@@ -49,6 +49,7 @@ public class PlayerBehaviour : MonoBehaviour
             ChangeMove(Move.Jump);
         }
         ChangeColor();
+        Debug.Log(this.ColorStates);
     }
 
     void ChangeMove(Move state)
@@ -83,20 +84,16 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ChangeColorState(ColorState colorState)
     {
-        _color = colorState;
-        switch (_color)
+        _colorState = colorState;
+        switch (_colorState)
         {
             case ColorState.Blue:
-                Debug.Log("Blue");
                 break;
             case ColorState.Green:
-                Debug.Log("Green");
                 break;
             case ColorState.Red:
-                Debug.Log("Red");
                 break;
             case ColorState.Yellow:
-                Debug.Log("Yellow");
                 break;
         }
     }

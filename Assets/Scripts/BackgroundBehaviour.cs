@@ -37,17 +37,31 @@ public class BackgroundBehaviour : MonoBehaviour
         this.transform.position = position;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("touché");
         PlayerBehaviour player = collision.GetComponent<PlayerBehaviour>();
         if (player != null)
         {
-            /*GameObject realPlayer = GameObject.Find("Player");
-            if (blue && realPlayer.color == PlayerBehaviour.ColorState.Blue)
+            if (blue && player.ColorStates == PlayerBehaviour.ColorState.Blue)
             {
-                Debug.Log("tata");
-            }*/
+                Debug.Log("nice");
+            }
+            else if (green && player.ColorStates == PlayerBehaviour.ColorState.Green)
+            {
+                Debug.Log("nice");
+            }
+            else if (red && player.ColorStates == PlayerBehaviour.ColorState.Red)
+            {
+                Debug.Log("nice");
+            }
+            else if (yellow && player.ColorStates == PlayerBehaviour.ColorState.Yellow)
+            {
+                Debug.Log("nice");
+            }
+            else
+            {
+                Debug.Log("miss");
+            }
         }
     }
 }

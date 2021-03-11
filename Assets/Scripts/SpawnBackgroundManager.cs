@@ -41,7 +41,6 @@ public class SpawnBackgroundManager : MonoBehaviour
     {
         Vector3 position = this.transform.position;
         GameObject BK = Instantiate(couleur, position, Quaternion.identity);
-        BackgroundBehaviour BKS = BK.GetComponent<BackgroundBehaviour>();
     }
 
     public GameObject SelectionOfColor(int numberOfColor)

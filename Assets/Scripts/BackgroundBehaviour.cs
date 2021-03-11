@@ -10,11 +10,6 @@ public class BackgroundBehaviour : MonoBehaviour
     public bool red;
     public bool yellow;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         Move();

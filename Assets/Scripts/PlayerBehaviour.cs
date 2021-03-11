@@ -60,10 +60,10 @@ public class PlayerBehaviour : MonoBehaviour
         {
             case MoveState.Run:
                 this.Run();
-                Debug.Log("Run");
+                //Debug.Log("Run");
                 break;
             case MoveState.Jump:
-                Debug.Log("Jump");
+                //Debug.Log("Jump");
                 break;
         }
     }

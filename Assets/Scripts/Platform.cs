@@ -37,7 +37,6 @@ public class Platform : MonoBehaviour
             if(dmg)
             {
                 GameManager.instance.ChangeGameState(GameManager.GameState.Death);
-                Debug.Log("Death");
             }
             else if (disappear)
             {

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     public enum GameState
     {
+        MainMenu,
         InGame,
         Pause,
         Death,
@@ -35,26 +36,24 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-
-    }
-
     public void ChangeGameState(GameState GS)
     {
         _gameState = GS;
         switch(_gameState)
         {
+            case GameState.MainMenu:
+                UIManager.instance.SetGameOverMenu(false);
+                UIManager.instance.SetMainMenu(true);
+                break;
             case GameState.InGame:
+                UIManager.instance.SetGameOverMenu(false);
+                UIManager.instance.SetMainMenu(false);
+                UIManager.instance.PauseResume();
                 break;
             case GameState.Pause:
                 break;
             case GameState.Death:
+                UIManager.instance.SetGameOverMenu(true);
                 break;
         }
     }

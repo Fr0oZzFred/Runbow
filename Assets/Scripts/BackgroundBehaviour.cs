@@ -38,23 +38,23 @@ public class BackgroundBehaviour : MonoBehaviour
         {
             if (blue && player.ColorStates == PlayerBehaviour.ColorState.Blue)
             {
-                Debug.Log("nice");
+                //Debug.Log("nice");
             }
             else if (green && player.ColorStates == PlayerBehaviour.ColorState.Green)
             {
-                Debug.Log("nice");
+                //Debug.Log("nice");
             }
             else if (red && player.ColorStates == PlayerBehaviour.ColorState.Red)
             {
-                Debug.Log("nice");
+                //Debug.Log("nice");
             }
             else if (yellow && player.ColorStates == PlayerBehaviour.ColorState.Yellow)
             {
-                Debug.Log("nice");
+                //Debug.Log("nice");
             }
             else
             {
-                Debug.Log("miss");
+                //Debug.Log("miss");
             }
         }
     }

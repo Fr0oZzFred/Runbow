@@ -49,7 +49,7 @@ public class PlayerBehaviour : MonoBehaviour
             ChangeMove(Move.Jump);
         }
         ChangeColor();
-        Debug.Log(this.ColorStates);
+        //Debug.Log(this.ColorStates);
     }
 
     void ChangeMove(Move state)

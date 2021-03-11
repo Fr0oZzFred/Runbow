@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public int score = 0;
+
     public enum GameState
     {
         InGame,

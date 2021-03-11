@@ -5,7 +5,6 @@ using UnityEngine;
 public class BackgroundBehaviour : MonoBehaviour
 {
     public float speed;
-    bool done = false;
     public bool blue;
     public bool green;
     public bool red;
@@ -19,11 +18,6 @@ public class BackgroundBehaviour : MonoBehaviour
     void Update()
     {
         Move();
-        if(transform.position.magnitude < 5 && !done )
-        {
-            SpawnBackgroundManager.instance.Spawn(SpawnBackgroundManager.instance.SelectionOfColor(SpawnBackgroundManager.instance.numberOfBK));
-            done = true;
-        }
         if(transform.position.magnitude > 30)
         {
             Destroy(this.gameObject);

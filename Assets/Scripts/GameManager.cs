@@ -32,13 +32,12 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
     }
-    // Start is called before the first frame update
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -47,15 +46,13 @@ public class GameManager : MonoBehaviour
     public void ChangeGameState(GameState GS)
     {
         _gameState = GS;
-        switch(gameState)
+        switch(_gameState)
         {
             case GameState.InGame:
                 break;
             case GameState.Pause:
                 break;
             case GameState.Death:
-                break;
-            default:
                 break;
         }
     }

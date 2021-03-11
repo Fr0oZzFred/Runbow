@@ -6,6 +6,10 @@ public class BackgroundBehaviour : MonoBehaviour
 {
     public float speed;
     bool done = false;
+    public bool blue;
+    public bool green;
+    public bool red;
+    public bool yellow;
 
     void Start()
     {
@@ -15,7 +19,7 @@ public class BackgroundBehaviour : MonoBehaviour
     void Update()
     {
         Move();
-        if(transform.position.magnitude < 10 && !done )
+        if(transform.position.magnitude < 5 && !done )
         {
             SpawnBackgroundManager.instance.Spawn(SpawnBackgroundManager.instance.SelectionOfColor(SpawnBackgroundManager.instance.numberOfBK));
             done = true;
@@ -31,5 +35,19 @@ public class BackgroundBehaviour : MonoBehaviour
         Vector3 position = this.transform.position;
         position.x -= speed * Time.deltaTime;
         this.transform.position = position;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("touché");
+        PlayerBehaviour player = collision.GetComponent<PlayerBehaviour>();
+        if (player != null)
+        {
+            /*GameObject realPlayer = GameObject.Find("Player");
+            if (blue && realPlayer.color == PlayerBehaviour.ColorState.Blue)
+            {
+                Debug.Log("tata");
+            }*/
+        }
     }
 }

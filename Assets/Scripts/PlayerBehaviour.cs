@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    public float jump = 7.0f;
     Rigidbody2D rigidbody2d;
     
-    public enum Move
+    public enum MoveState
     {
         Jump,
         Run,
         Death,
     }
-    private Move _move;
-    public Move Moves
+    private MoveState _moveStates;
+    public MoveState MoveStates
     {
         get
         {
-            return _move;
+            return _moveStates;
         }
     }
 
@@ -46,23 +47,22 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            ChangeMove(Move.Jump);
+            this.Jump();
         }
         ChangeColor();
         //Debug.Log(this.ColorStates);
     }
 
-    void ChangeMove(Move state)
+    void ChangeMove(MoveState state)
     {
-        _move = state;
-        switch (_move)
+        _moveStates = state;
+        switch (_moveStates)
         {
-            case Move.Run:
+            case MoveState.Run:
                 this.Run();
                 Debug.Log("Run");
                 break;
-            case Move.Jump:
-                this.Jump();
+            case MoveState.Jump:
                 Debug.Log("Jump");
                 break;
         }
@@ -70,11 +70,20 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Jump()
     {
-        rigidbody2d.velocity = new Vector2(0.0f, 7.0f);
+        if(this.MoveStates == MoveState.Run)
+        {
+            rigidbody2d.velocity = new Vector2(0.0f, jump);
+            ChangeMove(MoveState.Jump);
+        }
     }
-    public void OnCollisionEnter2d(Collision collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        ChangeMove(Move.Run);
+        Platform platform = collision.collider.GetComponent<Platform>();
+        if( platform != null)
+        {
+            ChangeMove(MoveState.Run);
+        }
     }
 
     void Run()

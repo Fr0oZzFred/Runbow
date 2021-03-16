@@ -53,9 +53,11 @@ public class UIManager : MonoBehaviour
     public void SetGameOverMenu(bool boolean)
     {
         gameOverMenu.SetActive(boolean);
-        if(boolean)
+        Time.timeScale = 1;
+        if (boolean)
         {
             hud.SetActive(false);
+            Time.timeScale = 0;
         }
     }
 }

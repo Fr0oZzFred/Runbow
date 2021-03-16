@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public float jump = 7.0f;
+    public float jump = 7.0f; 
+    float green = 0;
+    float red = 0;
+    float blue = 0;
+    float pink = 0;
     Rigidbody2D rigidbody2d;
     
     public enum MoveState
@@ -45,12 +49,13 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            this.Jump();
-        }
-        ChangeColor();
+        this.Jump(jump);
+        ChangeColor(green, red , blue ,pink);
         //Debug.Log(this.ColorStates);
+        if (transform.position.magnitude > 4)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void ChangeMove(MoveState state)
@@ -68,9 +73,9 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    void Jump()
+    void Jump(float jump)
     {
-        if(this.MoveStates == MoveState.Run)
+        if(Input.GetKeyDown(KeyCode.Space) && this.MoveStates == MoveState.Run)
         {
             rigidbody2d.velocity = new Vector2(0.0f, jump);
             ChangeMove(MoveState.Jump);
@@ -107,27 +112,18 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
     
-    void ChangeColor()
+    void ChangeColor(float green, float red, float blue, float pink)
     {
-        float blue = Input.GetAxis("Blue");
-        float green = Input.GetAxis("Green");
-        float red = Input.GetAxis("Red");
-        float yellow = Input.GetAxis("Yellow");
-        if(blue == 1)
+        green += Input.GetAxis("Color 1") *1;
+        red += Input.GetAxis("Color 2") * 5;
+        blue += Input.GetAxis("Color 3")* 10;
+        pink += Input.GetAxis("Color 4") * 15;
+        float total = green + red + blue + pink;
+        Debug.Log(total);
+        /*switch(total)
         {
-            ChangeColorState(ColorState.Blue);
-        }
-        else if(green == 1)
-        {
-            ChangeColorState(ColorState.Green);
-        }
-        else if (red == 1)
-        {
-            ChangeColorState(ColorState.Red);
-        }
-        else if (yellow == 1)
-        {
-            ChangeColorState(ColorState.Yellow);
-        }
+
+        }*/
+
     }
 }

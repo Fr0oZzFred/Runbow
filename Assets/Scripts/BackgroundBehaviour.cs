@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class BackgroundBehaviour : MonoBehaviour
 {
-    public float speed;
-    public bool blue;
     public bool green;
     public bool red;
+    public bool blue;
+    public bool pink;
+    public bool purple;
     public bool yellow;
-    public float time;
-    public float timingPerfect = 2;
-    public float timingGood = 5;
+    public bool cyan;
+    float time;
+    bool done = false;
 
     void Update()
     {
         Move();
-        if (transform.position.magnitude > 30)
+        Debug.Log(time);
+        if (transform.position.x < -20)
         {
             Destroy(this.gameObject);
         }
@@ -25,55 +27,95 @@ public class BackgroundBehaviour : MonoBehaviour
     void Move()
     {
         Vector3 position = this.transform.position;
-        position.x -= speed * Time.deltaTime;
+        position.x -= LevelManager.instance.speedBackground * Time.deltaTime;
         this.transform.position = position;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        PlayerBehaviour player = collision.GetComponent<PlayerBehaviour>();
+        if (player != null)
+        {
+            VerifColor(player, true);
+        }
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-
         PlayerBehaviour player = collision.GetComponent<PlayerBehaviour>();
         if (player != null)
         {
-            if (blue && player.ColorStates == PlayerBehaviour.ColorState.Blue)
-            {
-                VerifTiming();
-            }
-            else if (green && player.ColorStates == PlayerBehaviour.ColorState.Green)
-            {
-                VerifTiming();
-            }
-            else if (red && player.ColorStates == PlayerBehaviour.ColorState.Red)
-            {
-                VerifTiming();
-            }
-            else if (yellow && player.ColorStates == PlayerBehaviour.ColorState.Yellow)
-            {
-                VerifTiming();
-            }
-            else
-            {
-                time += Time.deltaTime;
-                if (time > timingGood)
-                {
-                    time = 0;
-                    Debug.Log("miss");
-                }
-            }
+            VerifColor(player, false);
         }
     }
 
-    void VerifTiming()
+    void VerifTiming(bool firstTime)
     {
-        if (time < 2)
+        LevelManager.instance.addScore(LevelManager.instance.scoreStay);
+        if (time < LevelManager.instance.timingPerfect)
         {
-            Debug.Log(timingPerfect);
-            Debug.Log("perfect");
+            if(!done && firstTime)
+            {
+                LevelManager.instance.addScore(LevelManager.instance.scorePerfect);
+                done = true;
+                time = 0;
+            }
         }
-        else if (time < 5)
+        else if (time < LevelManager.instance.timingGood)
         {
-            Debug.Log(timingGood);
-            Debug.Log("good");
+            if(!done)
+            {
+                LevelManager.instance.addScore(LevelManager.instance.scoreGood);
+                done = true;
+                time = 0;
+            }
+        }
+    }
+    
+    void VerifColor(PlayerBehaviour player, bool firstTime)
+    {
+        switch (player.ColorStates)
+        {
+            case PlayerBehaviour.ColorState.Green:
+                VerifColorPlayer(green, player, firstTime);
+                break;
+            case PlayerBehaviour.ColorState.Red:
+                VerifColorPlayer(red, player, firstTime);
+                break;
+            case PlayerBehaviour.ColorState.Blue:
+                VerifColorPlayer(blue, player, firstTime);
+                break;
+            case PlayerBehaviour.ColorState.Pink:
+                VerifColorPlayer(pink, player, firstTime);
+                break;
+            case PlayerBehaviour.ColorState.Purple:
+                VerifColorPlayer(purple, player, firstTime);
+                break;
+            case PlayerBehaviour.ColorState.Yellow:
+                VerifColorPlayer(yellow, player, firstTime);
+                break;
+            case PlayerBehaviour.ColorState.Cyan:
+                VerifColorPlayer(cyan, player, firstTime);
+                break;
+        }
+    }
+
+    void VerifColorPlayer(bool color, PlayerBehaviour player, bool firstTime)
+    {
+        if (color)
+        {
+            VerifTiming(firstTime);
+        }
+        else
+        {
+            time += Time.deltaTime;
+            if (time > LevelManager.instance.timingGood)
+            {
+                time = 0;
+                --player.life;
+                LevelManager.instance.addScore(LevelManager.instance.scoreMiss);
+            }
+
         }
     }
 }

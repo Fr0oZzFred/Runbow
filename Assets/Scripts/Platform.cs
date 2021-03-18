@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public float speed = 3.0f;
     public bool dmg;
     public bool disappear;
-
-    void Start()
-    {
-
-    }
-
+    public float disappearTimer = 1;
+    public bool jump;
+    public float jumpPower = 14;
     void Update()
     {
         Move();
-        if (transform.position.magnitude > 30)
+        if (transform.position.x < -20)
         {
             Destroy(this.gameObject);
         }
@@ -25,7 +21,7 @@ public class Platform : MonoBehaviour
     void Move()
     {
         Vector2 position = transform.position;
-        position.x = position.x - speed * Time.deltaTime;
+        position.x -= LevelManager.instance.speedPlatform * Time.deltaTime;
         transform.position = position;
     }
 
@@ -37,12 +33,26 @@ public class Platform : MonoBehaviour
             if(dmg)
             {
                 GameManager.instance.ChangeGameState(GameManager.GameState.Death);
+                player.ChangeMoveState(PlayerBehaviour.MoveState.Death);
             }
-            else if (disappear)
+            else if(jump)
+            {
+                player.Jump(jumpPower);
+            }
+
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        disappearTimer -= Time.deltaTime;
+        PlayerBehaviour player = collision.collider.GetComponent<PlayerBehaviour>();
+        if (player != null)
+        {
+            if (disappearTimer < 0 && disappear)
             {
                 Destroy(this.gameObject);
             }
-
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int score = 0;
+    public int candy = -1;
 
     public enum GameState
     {
@@ -30,31 +30,50 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
-
+     
     void Awake()
     {
         _instance = this;
+        addCandy(1);
+    }
+
+    public void addCandy(int amount)
+    {
+        candy+= amount;
+        UIManager.instance.DisplayCandy();
     }
 
     public void ChangeGameState(GameState GS)
     {
         _gameState = GS;
-        switch(_gameState)
+        switch (_gameState)
         {
             case GameState.MainMenu:
-                UIManager.instance.SetGameOverMenu(false);
-                UIManager.instance.SetMainMenu(true);
+                Time.timeScale = 1;
+                UIManager.instance.SetMainMenuActive();
                 break;
             case GameState.InGame:
-                UIManager.instance.SetGameOverMenu(false);
-                UIManager.instance.SetMainMenu(false);
-                UIManager.instance.PauseResume();
+                Time.timeScale = 1;
+                UIManager.instance.SetInGameHUDActive();
                 break;
             case GameState.Pause:
+                Time.timeScale = 0;
+                UIManager.instance.SetPauseMenu();
                 break;
             case GameState.Death:
-                UIManager.instance.SetGameOverMenu(true);
+                Time.timeScale = 0;
+                UIManager.instance.SetGameOverMenuActive();
                 break;
         }
+    }
+
+    public void ChangeGameStateInGame()
+    {
+        ChangeGameState(GameState.InGame);
+    }
+
+    public void ChangeGameStatePause()
+    {
+        ChangeGameState(GameState.Pause);
     }
 }

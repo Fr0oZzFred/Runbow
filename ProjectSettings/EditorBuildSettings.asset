@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Fred.unity
     guid: aab143bc94f89e242bf347fa029bbed2
   - enabled: 1
+    path: "Assets/Scenes/C\xE9dric.unity"
+    guid: 89754c853f4e1034dbb3c61899d40445
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 88dbd65116fb5a949b356e638f334174
   - enabled: 1

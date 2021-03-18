@@ -37,11 +37,6 @@ public class ScenesManager : MonoBehaviour
         GameManager.instance.ChangeGameState(GameManager.GameState.MainMenu);
     }
 
-    public void LoadGameOver()
-    {
-        SceneManager.LoadScene("GameOver");
-    }
-
     public void Reload()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

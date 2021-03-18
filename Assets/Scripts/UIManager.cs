@@ -9,7 +9,9 @@ public class UIManager : MonoBehaviour
     public GameObject hud;
     public GameObject pauseMenu;
     public GameObject gameOverMenu;
+    public GameObject nextLevel;
     public Text textScore;
+    public Text textCandy;
     private static UIManager _instance;
     public static UIManager instance
     {
@@ -24,40 +26,51 @@ public class UIManager : MonoBehaviour
         _instance = this;
     }
 
-    void Update()
+    public void DisplayScore()
     {
-        textScore.text = "Score : " + GameManager.instance.score;
+        textScore.text = "Score : " + LevelManager.instance.score;
     }
 
-    public void SetMainMenu(bool boolean)
+    public void DisplayCandy()
     {
-        mainMenu.SetActive(boolean);
+        textCandy.text = "Score : " + GameManager.instance.candy;
+    }
+    public void SetMainMenuActive()
+    {
+        mainMenu.SetActive(true);
+        hud.SetActive(false);
+        pauseMenu.SetActive(false);
+        gameOverMenu.SetActive(false);
+    }
+    public void SetInGameHUDActive()
+    {
+        mainMenu.SetActive(false);
+        hud.SetActive(true);
+        pauseMenu.SetActive(false);
+        gameOverMenu.SetActive(false);
+    }
+    public void SetPauseMenu()
+    {
+        mainMenu.SetActive(false);
+        hud.SetActive(false);
+        pauseMenu.SetActive(true);
+        gameOverMenu.SetActive(false);
+        Time.timeScale = 0;
     }
 
-    public void PauseResume()
+    public void SetGameOverMenuActive()
     {
-        if(hud.activeSelf == true)
+        mainMenu.SetActive(false);
+        hud.SetActive(false);
+        pauseMenu.SetActive(false);
+        gameOverMenu.SetActive(true);
+        if (LevelManager.instance.score >= LevelManager.instance.nextLevelCondition)
         {
-            hud.SetActive(false);
-            pauseMenu.SetActive(true);
-            Time.timeScale = 0;
+            nextLevel.SetActive(true);
         }
         else
         {
-            hud.SetActive(true);
-            pauseMenu.SetActive(false);
-            Time.timeScale = 1;
-        }
-    }
-
-    public void SetGameOverMenu(bool boolean)
-    {
-        gameOverMenu.SetActive(boolean);
-        Time.timeScale = 1;
-        if (boolean)
-        {
-            hud.SetActive(false);
-            Time.timeScale = 0;
+            nextLevel.SetActive(false);
         }
     }
 }

@@ -52,23 +52,17 @@ public class BackgroundBehaviour : MonoBehaviour
     void VerifTiming(bool firstTime)
     {
         LevelManager.instance.addScore(LevelManager.instance.scoreStay);
-        if (time < LevelManager.instance.timingPerfect)
+        if(!done && firstTime)
         {
-            if(!done && firstTime)
-            {
-                LevelManager.instance.addScore(LevelManager.instance.scorePerfect);
-                done = true;
-                time = 0;
-            }
+            LevelManager.instance.addScore(LevelManager.instance.scorePerfect);
+            done = true;
+            time = 0;
         }
-        else if (time < LevelManager.instance.timingGood)
+        else if (time < LevelManager.instance.timingGood && !done)
         {
-            if(!done)
-            {
-                LevelManager.instance.addScore(LevelManager.instance.scoreGood);
-                done = true;
-                time = 0;
-            }
+            LevelManager.instance.addScore(LevelManager.instance.scoreGood);
+            done = true;
+            time = 0;
         }
     }
     
@@ -96,6 +90,9 @@ public class BackgroundBehaviour : MonoBehaviour
                 break;
             case PlayerBehaviour.ColorState.Cyan:
                 VerifColorPlayer(cyan, player, firstTime);
+                break;
+            default:
+                VerifColorPlayer(false, player, firstTime);
                 break;
         }
     }

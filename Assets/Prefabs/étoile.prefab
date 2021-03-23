@@ -160,13 +160,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6271050831153352537, guid: 1656e7354b5c0ab4b9da0010fbb0b4ba,
         type: 3}
+      propertyPath: ShapeModule.angle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271050831153352537, guid: 1656e7354b5c0ab4b9da0010fbb0b4ba,
+        type: 3}
       propertyPath: moveWithTransform
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6271050831153352537, guid: 1656e7354b5c0ab4b9da0010fbb0b4ba,
         type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271050831153352537, guid: 1656e7354b5c0ab4b9da0010fbb0b4ba,
+        type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 30
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271050831153352537, guid: 1656e7354b5c0ab4b9da0010fbb0b4ba,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6271050831153352539, guid: 1656e7354b5c0ab4b9da0010fbb0b4ba,
         type: 3}

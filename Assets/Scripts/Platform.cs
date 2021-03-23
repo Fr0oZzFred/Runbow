@@ -6,9 +6,17 @@ public class Platform : MonoBehaviour
 {
     public bool dmg;
     public bool disappear;
-    public float disappearTimer = 1;
+    public float disappearSpeed = 0.01f;
     public bool jump;
     public float jumpPower = 14;
+    SpriteRenderer rend;
+    Color color = Color.white;
+
+    private void Start()
+    {
+        rend = GetComponent<SpriteRenderer>();   
+    }
+
     void Update()
     {
         Move();
@@ -45,13 +53,17 @@ public class Platform : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        disappearTimer -= Time.deltaTime;
         PlayerBehaviour player = collision.collider.GetComponent<PlayerBehaviour>();
         if (player != null)
         {
-            if (disappearTimer < 0 && disappear)
+            if (disappear)
             {
-                Destroy(this.gameObject);
+                color.a -= disappearSpeed;
+                rend.color = color;
+                if (color.a <= 0)
+                {
+                    Destroy(this.gameObject);
+                }
             }
         }
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ParticlesBehaviour : MonoBehaviour
 {
     public int speed = 5;
+    Vector2 positionTest = new Vector2(-3, 6);
 
     void Update()
     {
@@ -14,7 +15,18 @@ public class ParticlesBehaviour : MonoBehaviour
     private void Move()
     {
         Vector2 position = transform.position;
-        position.x += speed * Time.deltaTime;
+        if (position.x > positionTest.x)
+        {
+            position.x -= speed * Time.deltaTime;
+        }
+        if(position.y < positionTest.y)
+        {
+            position.y += speed * Time.deltaTime;
+        }
+        if(position.x < positionTest.x && position.y > positionTest.y)
+        {
+            Destroy(this.gameObject);
+        }
         transform.position = position;
     }
 

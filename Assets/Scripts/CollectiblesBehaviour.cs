@@ -5,7 +5,6 @@ using UnityEngine;
 public class CollectiblesBehaviour : MonoBehaviour
 {
     public int score;
-
     void Update()
     {
         Move();

@@ -72,12 +72,12 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(0.0f, jump);
         ChangeMoveState(MoveState.Jump);
-        //GameObject star1 = Instantiate(star, this.transform.position, Quaternion.identity);
+        GameObject star1 = Instantiate(star, this.transform.position, Quaternion.identity);
     }
 
     void VerifDeath()
     {
-        if (transform.position.magnitude > 4 || life < 0)
+        if (transform.position.magnitude > 7 || life < 0)
         {
             GameManager.instance.ChangeGameState(GameManager.GameState.Death);
             this.enabled = false;

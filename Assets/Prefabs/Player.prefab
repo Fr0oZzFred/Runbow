@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpPower: 7
   life: 2
+  star: {fileID: 4944622092286213508, guid: 537acb13f7e40c54a9aa3a413bc4dce8, type: 3}
 --- !u!50 &5077575371301220401
 Rigidbody2D:
   serializedVersion: 4

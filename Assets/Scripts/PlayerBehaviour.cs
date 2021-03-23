@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public float jumpPower = 7.0f; 
+    public float jumpPower = 7.0f;
+    public int life = 2;
+    public GameObject star;
     float input1 = 0;
     float input2 = 0;
     float input3 = 0;
     float input4 = 0;
-    public int life = 2;
     Rigidbody2D rigidbody2d;
     public enum MoveState
     {
@@ -71,6 +72,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(0.0f, jump);
         ChangeMoveState(MoveState.Jump);
+        GameObject star1 = Instantiate(star, this.transform.position, Quaternion.identity);
     }
 
     void VerifDeath()

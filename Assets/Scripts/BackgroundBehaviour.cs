@@ -17,7 +17,6 @@ public class BackgroundBehaviour : MonoBehaviour
     void Update()
     {
         Move();
-        Debug.Log(time);
         if (transform.position.x < -20)
         {
             Destroy(this.gameObject);

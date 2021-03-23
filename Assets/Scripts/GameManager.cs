@@ -61,7 +61,8 @@ public class GameManager : MonoBehaviour
                 UIManager.instance.SetPauseMenu();
                 break;
             case GameState.Death:
-                Time.timeScale = 0;
+                LevelManager.instance.speedBackground = 0;
+                LevelManager.instance.speedPlatform = 0;
                 UIManager.instance.SetGameOverMenuActive();
                 break;
         }

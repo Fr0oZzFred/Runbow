@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject gameOverMenu;
     public GameObject nextLevel;
+    public GameObject[] stars;
     public Text textScore;
     public Text textCandy;
     private static UIManager _instance;
@@ -33,7 +34,7 @@ public class UIManager : MonoBehaviour
 
     public void DisplayCandy()
     {
-        textCandy.text = "Score : " + GameManager.instance.candy;
+        textCandy.text = "Candy : " + GameManager.instance.candy;
     }
     public void SetMainMenuActive()
     {
@@ -64,13 +65,46 @@ public class UIManager : MonoBehaviour
         hud.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(true);
-        if (LevelManager.instance.score >= LevelManager.instance.nextLevelCondition)
+        StartCoroutine(ShowStars());
+    }
+
+    IEnumerator ShowStars()
+    {
+        stars[0].SetActive(false);
+        stars[1].SetActive(false);
+        stars[2].SetActive(false);
+        nextLevel.SetActive(false);
+        if (LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.thirdStar)
         {
+            stars[0].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+            stars[1].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+            stars[2].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+            nextLevel.SetActive(true);
+        }
+        else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.secondStar)
+        {
+            stars[0].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+            stars[1].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+            nextLevel.SetActive(true);
+        }
+        else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.firstStar)
+        {
+            stars[0].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
             nextLevel.SetActive(true);
         }
         else
         {
+            stars[0].SetActive(false);
+            stars[1].SetActive(false);
+            stars[2].SetActive(false);
             nextLevel.SetActive(false);
         }
     }
+    
 }

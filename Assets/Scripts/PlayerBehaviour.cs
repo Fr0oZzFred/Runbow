@@ -77,7 +77,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void VerifDeath()
     {
-        if (transform.position.magnitude > 4 || life < 0)
+        if (transform.position.magnitude > 7 || life < 0)
         {
             GameManager.instance.ChangeGameState(GameManager.GameState.Death);
             this.enabled = false;

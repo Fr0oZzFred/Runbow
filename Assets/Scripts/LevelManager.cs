@@ -10,7 +10,6 @@ public class LevelManager : MonoBehaviour
     public int thirdStar = 50;
     public float speedPlatform = 3;
     public float speedBackground = 3;
-    public float timingPerfect = 0.5f;
     public float timingGood = 2;
     public int scorePerfect = 1000;
     public int scoreGood = 500;

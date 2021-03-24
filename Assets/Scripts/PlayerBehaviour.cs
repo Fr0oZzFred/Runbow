@@ -7,6 +7,8 @@ public class PlayerBehaviour : MonoBehaviour
     public float jumpPower = 7.0f;
     public int life = 2;
     public GameObject star;
+    SpriteRenderer spriteRenderer;
+    public Sprite[] playerSkins;
     float input1 = 0;
     float input2 = 0;
     float input3 = 0;
@@ -46,15 +48,11 @@ public class PlayerBehaviour : MonoBehaviour
             return _colorState;
         }
     }
-    void Awake()
-    {
-        Vector2 position = new Vector2(0, 0);
-        this.transform.position = position;
-    }
     void Start()
     {
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
         this.enabled = true;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -72,12 +70,12 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(0.0f, jump);
         ChangeMoveState(MoveState.Jump);
-        GameObject star1 = Instantiate(star, this.transform.position, Quaternion.identity);
+        //GameObject star1 = Instantiate(star, this.transform.position, Quaternion.identity);
     }
 
     void VerifDeath()
     {
-        if (transform.position.magnitude > 7 || life < 0)
+        if (transform.position.y < -4 || transform.position.y > 8 || life < 0)
         {
             GameManager.instance.ChangeGameState(GameManager.GameState.Death);
             this.enabled = false;
@@ -107,6 +105,11 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
+    void ChangeSprite(int colorInt)
+    {
+        spriteRenderer.sprite = playerSkins[colorInt];
+    }
+
     public void ChangeMoveState(MoveState state)
     {
         _moveStates = state;
@@ -125,20 +128,28 @@ public class PlayerBehaviour : MonoBehaviour
         switch (_colorState)
         {
             case ColorState.White:
+                ChangeSprite(0);
                 break;
             case ColorState.Green:
+                ChangeSprite(1);
                 break;
             case ColorState.Red:
+                ChangeSprite(2);
                 break;
             case ColorState.Blue:
+                ChangeSprite(3);
                 break;
             case ColorState.Pink:
+                ChangeSprite(4);
                 break;
             case ColorState.Purple:
+                ChangeSprite(5);
                 break;
             case ColorState.Yellow:
+                ChangeSprite(6);
                 break;
             case ColorState.Cyan:
+                ChangeSprite(7);
                 break;
         }
     }

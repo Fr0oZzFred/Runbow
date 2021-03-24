@@ -4,16 +4,59 @@ using UnityEngine;
 
 public class BackgroundBehaviour : MonoBehaviour
 {
-    public bool green;
-    public bool red;
-    public bool blue;
-    public bool pink;
-    public bool purple;
-    public bool yellow;
-    public bool cyan;
+    public int firstColor;
     float time;
     bool done = false;
+    SpriteRenderer spriteRenderer;
+    public Sprite[] backgroundColor;
+    public enum BackGroundColorState
+    {
+        Green,
+        Red,
+        Blue,
+        Pink,
+        Purple,
+        Yellow,
+        Cyan,
+    }
+    private BackGroundColorState _colorState;
+    public BackGroundColorState ColorStates
+    {
+        get
+        {
+            return _colorState;
+        }
+    }
 
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        switch(firstColor)
+        {
+            case 0:
+                ChangeBKColorState(BackGroundColorState.Green);
+                break;
+            case 1:
+                ChangeBKColorState(BackGroundColorState.Red);
+                break;
+            case 2:
+                ChangeBKColorState(BackGroundColorState.Blue);
+                break;
+            case 3:
+                ChangeBKColorState(BackGroundColorState.Pink);
+                break;
+            case 4:
+                ChangeBKColorState(BackGroundColorState.Purple);
+                break;
+            case 5:
+                ChangeBKColorState(BackGroundColorState.Yellow);
+                break;
+            case 6:
+                ChangeBKColorState(BackGroundColorState.Cyan);
+                break;
+
+        }
+    }
     void Update()
     {
         Move();
@@ -23,6 +66,10 @@ public class BackgroundBehaviour : MonoBehaviour
         }
     }
 
+    void ChangeBackGroundColor(int colorInt)
+    {
+        spriteRenderer.sprite = backgroundColor[colorInt];
+    }
     void Move()
     {
         Vector3 position = this.transform.position;
@@ -47,58 +94,38 @@ public class BackgroundBehaviour : MonoBehaviour
             VerifColor(player, false);
         }
     }
-
-    void VerifTiming(bool firstTime)
-    {
-        LevelManager.instance.addScore(LevelManager.instance.scoreStay);
-        if(!done && firstTime)
-        {
-            LevelManager.instance.addScore(LevelManager.instance.scorePerfect);
-            done = true;
-            time = 0;
-        }
-        else if (time < LevelManager.instance.timingGood && !done)
-        {
-            LevelManager.instance.addScore(LevelManager.instance.scoreGood);
-            done = true;
-            time = 0;
-        }
-    }
     
     void VerifColor(PlayerBehaviour player, bool firstTime)
     {
         switch (player.ColorStates)
         {
             case PlayerBehaviour.ColorState.Green:
-                VerifColorPlayer(green, player, firstTime);
+                VerifColorPlayer(BackGroundColorState.Green, player, firstTime);
                 break;
             case PlayerBehaviour.ColorState.Red:
-                VerifColorPlayer(red, player, firstTime);
+                VerifColorPlayer(BackGroundColorState.Red, player, firstTime);
                 break;
             case PlayerBehaviour.ColorState.Blue:
-                VerifColorPlayer(blue, player, firstTime);
+                VerifColorPlayer(BackGroundColorState.Blue, player, firstTime);
                 break;
             case PlayerBehaviour.ColorState.Pink:
-                VerifColorPlayer(pink, player, firstTime);
+                VerifColorPlayer(BackGroundColorState.Pink, player, firstTime);
                 break;
             case PlayerBehaviour.ColorState.Purple:
-                VerifColorPlayer(purple, player, firstTime);
+                VerifColorPlayer(BackGroundColorState.Purple, player, firstTime);
                 break;
             case PlayerBehaviour.ColorState.Yellow:
-                VerifColorPlayer(yellow, player, firstTime);
+                VerifColorPlayer(BackGroundColorState.Yellow, player, firstTime);
                 break;
             case PlayerBehaviour.ColorState.Cyan:
-                VerifColorPlayer(cyan, player, firstTime);
-                break;
-            default:
-                VerifColorPlayer(false, player, firstTime);
+                VerifColorPlayer(BackGroundColorState.Cyan, player, firstTime);
                 break;
         }
     }
 
-    void VerifColorPlayer(bool color, PlayerBehaviour player, bool firstTime)
+    void VerifColorPlayer(BackGroundColorState color, PlayerBehaviour player, bool firstTime)
     {
-        if (color)
+        if (ColorStates == color)
         {
             VerifTiming(firstTime);
         }
@@ -112,6 +139,52 @@ public class BackgroundBehaviour : MonoBehaviour
                 LevelManager.instance.addScore(LevelManager.instance.scoreMiss);
             }
 
+        }
+    }
+
+    void VerifTiming(bool firstTime)
+    {
+        LevelManager.instance.addScore(LevelManager.instance.scoreStay);
+        if (!done && firstTime)
+        {
+            LevelManager.instance.addScore(LevelManager.instance.scorePerfect);
+            done = true;
+            time = 0;
+        }
+        else if (time < LevelManager.instance.timingGood && !done)
+        {
+            LevelManager.instance.addScore(LevelManager.instance.scoreGood);
+            done = true;
+            time = 0;
+        }
+    }
+
+    void ChangeBKColorState(BackGroundColorState colorState)
+    {
+        _colorState = colorState;
+        switch (_colorState)
+        {
+            case BackGroundColorState.Green:
+                ChangeBackGroundColor(0);
+                break;
+            case BackGroundColorState.Red:
+                ChangeBackGroundColor(1);
+                break;
+            case BackGroundColorState.Blue:
+                ChangeBackGroundColor(2);
+                break;
+            case BackGroundColorState.Pink:
+                ChangeBackGroundColor(3);
+                break;
+            case BackGroundColorState.Purple:
+                ChangeBackGroundColor(4);
+                break;
+            case BackGroundColorState.Yellow:
+                ChangeBackGroundColor(5);
+                break;
+            case BackGroundColorState.Cyan:
+                ChangeBackGroundColor(6);
+                break;
         }
     }
 }

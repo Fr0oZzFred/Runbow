@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5077575371301220413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.4, y: -1.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -49,6 +49,16 @@ MonoBehaviour:
   jumpPower: 7
   life: 2
   star: {fileID: 4944622092286213508, guid: 537acb13f7e40c54a9aa3a413bc4dce8, type: 3}
+  firstColor: 0
+  playerSkins:
+  - {fileID: 21300000, guid: 918d6260f09f1614b97ee3500e68b36a, type: 3}
+  - {fileID: 21300000, guid: 09b283b6d5dfa304f9035e9d61e2aa0c, type: 3}
+  - {fileID: 21300000, guid: b230418de9a462947b43df2bfa79d86f, type: 3}
+  - {fileID: 21300000, guid: 309cb7c70260540479ae777aa75a396e, type: 3}
+  - {fileID: 21300000, guid: 5d9da9f915651df4983792c1919d0396, type: 3}
+  - {fileID: 21300000, guid: 3ebd8159f9c93fa44a5c0656f7aa21fe, type: 3}
+  - {fileID: 21300000, guid: 80496c364ac5edb408a317fd286fe61e, type: 3}
+  - {fileID: 21300000, guid: 808179021463ea4428e7477627c5aada, type: 3}
 --- !u!50 &5077575371301220401
 Rigidbody2D:
   serializedVersion: 4
@@ -83,18 +93,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.018903494, y: -0.23499286}
+  m_Offset: {x: -0.31106377, y: -0.05868864}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.92}
-    newSize: {x: 1.28, y: 1.92}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8865781, y: 1.4699857}
+  m_Size: {x: 3.3850555, y: 4.8852415}
   m_EdgeRadius: 0
 --- !u!212 &5077575371301220415
 SpriteRenderer:
@@ -135,12 +145,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0bee7a8a2a251dc4dbb30ae62f2ee0be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 918d6260f09f1614b97ee3500e68b36a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.92}
+  m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -8,6 +8,10 @@ public class CollectiblesBehaviour : MonoBehaviour
     void Update()
     {
         Move();
+        if (transform.position.x < -20)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void Move()

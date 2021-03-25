@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public int score = -1;
+    public int score = 0;
     public int firstStar = 50;
     public int secondStar = 50;
     public int thirdStar = 50;
@@ -31,7 +31,7 @@ public class LevelManager : MonoBehaviour
     void Awake()
     {
         _instance = this;
-        addScore(1);
+        addScore(0);
     }
 
     private void Update()

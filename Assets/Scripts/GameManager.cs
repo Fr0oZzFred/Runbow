@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int candy = -1;
+    public int candy = 0;
     int totalLevelDone = 0;
     public int numberOfTails = 0;
     public bool[] level;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         _instance = this;
-        addCandy(1);
+        addCandy(0);
     }
 
     public void addCandy(int amount)
@@ -68,22 +68,30 @@ public class GameManager : MonoBehaviour
                 LevelManager.instance.speedBackground = 0;
                 LevelManager.instance.speedPlatform = 0;
                 UIManager.instance.SetGameOverMenuActive();
-                if(LevelManager.instance.levelDone && !level[LevelManager.instance.level])
-                {
-                    totalLevelDone++;
-                    if(totalLevelDone >= tailsCondition[index])
-                    {
-                        numberOfTails++;
-                        if (index < tailsCondition.Length)
-                        {
-                            index++;
-                        }
-                    }
-                }
+                UpgradeTail();
                 break;
         }
     }
 
+    void UpgradeTail()
+    {
+        if (LevelManager.instance.levelDone && !level[LevelManager.instance.level])
+        {
+            level[LevelManager.instance.level] = true;
+            totalLevelDone++;
+            if (totalLevelDone >= tailsCondition[index])
+            {
+                if (numberOfTails < 10)
+                {
+                    numberOfTails++;
+                }
+                if (index < tailsCondition.Length)
+                {
+                    index++;
+                }
+            }
+        }
+    }
     public void ChangeGameStateInGame()
     {
         ChangeGameState(GameState.InGame);

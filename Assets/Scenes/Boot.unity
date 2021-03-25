@@ -2599,7 +2599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1490a8a13609a0498f037673cb91c50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  candy: -1
+  candy: 0
   numberOfTails: 0
   level: 00000000000000000000
   tailsCondition: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000

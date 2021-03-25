@@ -44,18 +44,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d8e3c761294e624d904535511f8cc96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: -1
+  score: 0
   firstStar: 50
   secondStar: 1000
   thirdStar: 2000
   speedPlatform: 3
   speedBackground: 3
-  timingPerfect: 0.5
   timingGood: 2
   scorePerfect: 1000
   scoreGood: 500
   scoreMiss: -10
   scoreStay: 1
+  level: 0
+  numberOfColor: 0
   levelDone: 0
 --- !u!61 &4414068757724779127
 BoxCollider2D:

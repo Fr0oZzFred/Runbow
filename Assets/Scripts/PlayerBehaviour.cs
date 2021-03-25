@@ -59,6 +59,10 @@ public class PlayerBehaviour : MonoBehaviour
         UpgradeTail(GameManager.instance.numberOfTails);
     }
 
+    Vector2 direction = new Vector2(5, 0);
+    string nom;
+    string derriere;
+    bool devder = false;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && this.MoveStates == MoveState.Run)

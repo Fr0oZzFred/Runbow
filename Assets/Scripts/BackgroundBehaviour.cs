@@ -86,10 +86,19 @@ public class BackgroundBehaviour : MonoBehaviour
             VerifColor(player, false);
         }
     }
-
+    int tutu = 0;
+    int temp = -1;
     public int RandomBK()
     {
-        int tutu = Random.Range(1, LevelManager.instance.numberOfColor);
+        tutu = Random.Range(1, LevelManager.instance.numberOfColor);
+        if(temp == tutu)
+        {
+            while(temp != tutu)
+            {
+                tutu = Random.Range(1, LevelManager.instance.numberOfColor);
+            }
+        }
+        temp = tutu;
         return tutu;
     }
 

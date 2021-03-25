@@ -89,7 +89,7 @@ public class BackgroundBehaviour : MonoBehaviour
 
     public int RandomBK()
     {
-        int tutu = Random.Range(1, 9);
+        int tutu = Random.Range(1, LevelManager.instance.numberOfColor);
         return tutu;
     }
 

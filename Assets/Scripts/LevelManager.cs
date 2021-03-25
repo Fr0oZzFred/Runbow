@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
     public int scoreMiss = 0;
     public int scoreStay = 1;
     public int level;
+    public int numberOfColor;
     public bool levelDone = false;
 
     private static LevelManager _instance;

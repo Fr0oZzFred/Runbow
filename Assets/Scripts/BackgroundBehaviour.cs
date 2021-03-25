@@ -10,6 +10,8 @@ public class BackgroundBehaviour : MonoBehaviour
     public int color;
     float time;
     bool done = false;
+    int tutu = 0;
+    int temp = -1;
     SpriteRenderer spriteRenderer;
     public Sprite[] backgroundColor;
     public enum BackGroundColorState
@@ -86,8 +88,6 @@ public class BackgroundBehaviour : MonoBehaviour
             VerifColor(player, false);
         }
     }
-    int tutu = 0;
-    int temp = -1;
     public int RandomBK()
     {
         tutu = Random.Range(1, LevelManager.instance.numberOfColor);

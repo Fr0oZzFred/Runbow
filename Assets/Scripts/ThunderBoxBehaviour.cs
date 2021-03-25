@@ -4,28 +4,43 @@ using UnityEngine;
 
 public class ThunderBoxBehaviour : MonoBehaviour
 {
+    public bool background;
     public int color;
-    public GameObject backgroundObject;
-    BackgroundBehaviour background;
+    public int platformType;
+    public GameObject @object;
+    BackgroundBehaviour backgroundObject;
+    Platform platform;
 
     private void Start()
     {
-        background = backgroundObject.GetComponent<BackgroundBehaviour>();
+        backgroundObject = @object.GetComponent<BackgroundBehaviour>();
+        if (backgroundObject)
+        {
+            backgroundObject = @object.GetComponent<BackgroundBehaviour>();
+        }
+        else
+        {
+            platform = @object.GetComponent<Platform>();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerBehaviour player = collision.GetComponent<PlayerBehaviour>();
-        if( player != null)
+        if(player != null && background)
         {
-            if(background.random)
+            if(backgroundObject.random)
             {
-                background.ChangeBKColorState((BackgroundBehaviour.BackGroundColorState)background.RandomBK());
+                backgroundObject.ChangeBKColorState((BackgroundBehaviour.BackGroundColorState)backgroundObject.RandomBK());
             }
             else
             {
-                background.ChangeBKColorState((BackgroundBehaviour.BackGroundColorState)color);
+                backgroundObject.ChangeBKColorState((BackgroundBehaviour.BackGroundColorState)color);
             }
+        }
+        else if(player != null)
+        {
+            platform.ChangePlatformState((Platform.PlatformState)platformType);
         }
     }
 }

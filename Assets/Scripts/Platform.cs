@@ -1,20 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public bool dmg;
-    public bool disappear;
+    public bool thunder;
+    public int platformType;
     public float disappearSpeed = 0.01f;
-    public bool jump;
-    public float jumpPower = 14;
+    public float jumpPower = 10;
+    public GameObject thunderBox;
     SpriteRenderer rend;
+    public Sprite[] platformSprite;
     Color color = Color.white;
-
+    public enum PlatformState
+    {
+        Normal,
+        Pics,
+        Disappear,
+        Jump,
+    }
+    private PlatformState __platformState;
+    public PlatformState PlatformStates
+    {
+        get
+        {
+            return __platformState;
+        }
+    }
     private void Start()
     {
-        rend = GetComponent<SpriteRenderer>();   
+        rend = GetComponent<SpriteRenderer>();
+        ChangePlatformState((PlatformState)platformType);
+        if(thunder)
+        {
+            thunderBox.SetActive(true);
+        }
     }
 
     void Update()
@@ -38,12 +56,12 @@ public class Platform : MonoBehaviour
         PlayerBehaviour player = collision.collider.GetComponent<PlayerBehaviour>();
         if (player != null)
         {
-            if(dmg)
+            if(PlatformStates == PlatformState.Pics)
             {
                 GameManager.instance.ChangeGameState(GameManager.GameState.Death);
                 player.ChangeMoveState(PlayerBehaviour.MoveState.Death);
             }
-            else if(jump)
+            else if(PlatformStates == PlatformState.Jump)
             {
                 player.Jump(jumpPower);
             }
@@ -56,7 +74,7 @@ public class Platform : MonoBehaviour
         PlayerBehaviour player = collision.collider.GetComponent<PlayerBehaviour>();
         if (player != null)
         {
-            if (disappear)
+            if (PlatformStates == PlatformState.Disappear)
             {
                 color.a -= disappearSpeed;
                 rend.color = color;
@@ -65,6 +83,31 @@ public class Platform : MonoBehaviour
                     Destroy(this.gameObject);
                 }
             }
+        }
+    }
+
+    void ChangePlatformSprite(int spriteInt)
+    {
+        rend.sprite = platformSprite[spriteInt];
+    }
+
+    public void ChangePlatformState(PlatformState platformState)
+    {
+        __platformState = platformState;
+        switch(__platformState)
+        {
+            case PlatformState.Normal:
+                ChangePlatformSprite(0);
+                break;
+            case PlatformState.Pics:
+                ChangePlatformSprite(1);
+                break;
+            case PlatformState.Disappear:
+                ChangePlatformSprite(2);
+                break;
+            case PlatformState.Jump:
+                ChangePlatformSprite(3);
+                break;
         }
     }
 }

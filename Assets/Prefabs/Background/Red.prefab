@@ -96,8 +96,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288e81f6fba5bf8428257f6a0d98baa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstColor: 1
+  random: 0
+  thunder: 0
+  thunderBox: {fileID: 0}
+  color: 2
   backgroundColor:
+  - {fileID: 0}
   - {fileID: 21300000, guid: 3a9e6e4afe613ff4db2bea9a621361e0, type: 3}
   - {fileID: 21300000, guid: 3c4d671f8a5517c40bcbd9e56f93df98, type: 3}
   - {fileID: 21300000, guid: db7a09281da2b0c46b605bfbc96dd1ef, type: 3}

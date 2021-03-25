@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     public int scoreGood = 500;
     public int scoreMiss = 0;
     public int scoreStay = 1;
+    public int level;
     public bool levelDone = false;
 
     private static LevelManager _instance;

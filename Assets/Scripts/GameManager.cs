@@ -5,7 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int candy = -1;
-
+    int totalLevelDone = 0;
+    public int numberOfTails = 0;
+    public bool[] level;
+    public int[] tailsCondition;
+    int index = 0;
     public enum GameState
     {
         MainMenu,
@@ -64,6 +68,18 @@ public class GameManager : MonoBehaviour
                 LevelManager.instance.speedBackground = 0;
                 LevelManager.instance.speedPlatform = 0;
                 UIManager.instance.SetGameOverMenuActive();
+                if(LevelManager.instance.levelDone && !level[LevelManager.instance.level])
+                {
+                    totalLevelDone++;
+                    if(totalLevelDone >= tailsCondition[index])
+                    {
+                        numberOfTails++;
+                        if (index < tailsCondition.Length)
+                        {
+                            index++;
+                        }
+                    }
+                }
                 break;
         }
     }

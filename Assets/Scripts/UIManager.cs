@@ -77,25 +77,24 @@ public class UIManager : MonoBehaviour
         if (LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.thirdStar)
         {
             stars[0].SetActive(true);
+            nextLevel.SetActive(true);
             yield return new WaitForSeconds(1.0f);
             stars[1].SetActive(true);
             yield return new WaitForSeconds(1.0f);
             stars[2].SetActive(true);
             yield return new WaitForSeconds(1.0f);
-            nextLevel.SetActive(true);
         }
         else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.secondStar)
         {
             stars[0].SetActive(true);
+            nextLevel.SetActive(true);
             yield return new WaitForSeconds(1.0f);
             stars[1].SetActive(true);
             yield return new WaitForSeconds(1.0f);
-            nextLevel.SetActive(true);
         }
         else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.firstStar)
         {
             stars[0].SetActive(true);
-            yield return new WaitForSeconds(1.0f);
             nextLevel.SetActive(true);
         }
         else

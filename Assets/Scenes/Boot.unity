@@ -2600,6 +2600,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   candy: -1
+  numberOfTails: 0
+  level: 00000000000000000000
+  tailsCondition: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000
 --- !u!4 &1156977184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6271050831153352518, guid: 1656e7354b5c0ab4b9da0010fbb0b4ba,

@@ -7,6 +7,8 @@ public class PlayerBehaviour : MonoBehaviour
     public float jumpPower = 7.0f;
     public int life = 2;
     public GameObject star;
+    public GameObject tailsGO;
+    TailsBehaviour tails;
     SpriteRenderer spriteRenderer;
     public Sprite[] playerSkins;
     float input1 = 0;
@@ -53,6 +55,8 @@ public class PlayerBehaviour : MonoBehaviour
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
         this.enabled = true;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        tails = tailsGO.GetComponent<TailsBehaviour>();
+        UpgradeTail(GameManager.instance.numberOfTails);
     }
 
     void Update()
@@ -70,7 +74,29 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(0.0f, jump);
         ChangeMoveState(MoveState.Jump);
-        //GameObject star1 = Instantiate(star, this.transform.position, Quaternion.identity);
+    }
+    
+    public void UpgradeTail(int number)
+    {
+        if(number < tails.sprite.Length)
+        {
+            tails.ChangeTail(number);
+        }
+    }
+    public void AnimationScore(string score)
+    {
+        if(score == "perfect")
+        {
+            GameObject star1 = Instantiate(star, this.transform.position, Quaternion.identity);
+        }
+        else if (score == "good")
+        {
+
+        }
+        else
+        {
+
+        }
     }
 
     void VerifDeath()

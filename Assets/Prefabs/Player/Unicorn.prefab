@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5077575371301220413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:
   - {fileID: 4456671810960009771}
   m_Father: {fileID: 0}
@@ -49,7 +49,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpPower: 7
   life: 2
-  star: {fileID: 4944622092286213508, guid: 537acb13f7e40c54a9aa3a413bc4dce8, type: 3}
+  starEffect: {fileID: 4944622092286213508, guid: 537acb13f7e40c54a9aa3a413bc4dce8,
+    type: 3}
+  candyEffect: {fileID: 488157918910100448, guid: f8cb6eeb12f353b4ba643d5786c3a375,
+    type: 3}
   tailsGO: {fileID: 5785342441589377516}
   playerSkins:
   - {fileID: 21300000, guid: 685c826c4286f84459e4af13e5a505f7, type: 3}
@@ -145,7 +148,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 685c826c4286f84459e4af13e5a505f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -227,7 +230,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

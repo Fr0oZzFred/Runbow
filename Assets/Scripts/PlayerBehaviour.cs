@@ -6,7 +6,8 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public float jumpPower = 7.0f;
     public int life = 2;
-    public GameObject star;
+    public GameObject starEffect;
+    public GameObject candyEffect;
     public GameObject tailsGO;
     TailsBehaviour tails;
     SpriteRenderer spriteRenderer;
@@ -83,11 +84,17 @@ public class PlayerBehaviour : MonoBehaviour
             tails.ChangeTail(number);
         }
     }
+
+    public void CandyEffect()
+    {
+        GameObject candyObject = Instantiate(candyEffect, this.transform.position, Quaternion.identity);
+    }
+
     public void AnimationScore(string score)
     {
         if(score == "perfect")
         {
-            GameObject star1 = Instantiate(star, this.transform.position, Quaternion.identity);
+            GameObject starObject = Instantiate(starEffect, this.transform.position, Quaternion.identity);
         }
         else if (score == "good")
         {

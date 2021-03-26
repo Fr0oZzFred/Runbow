@@ -27,6 +27,7 @@ public class CollectiblesBehaviour : MonoBehaviour
         if (player != null)
         {
             GameManager.instance.addCandy(score);
+            player.CandyEffect();
             Destroy(this.gameObject);
         }
     }

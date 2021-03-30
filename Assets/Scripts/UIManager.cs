@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject gameOverMenu;
     public GameObject nextLevel;
+    public GameObject choixPersonages;
     public GameObject[] stars;
     public Text textScore;
     public Text textCandy;
@@ -42,6 +43,7 @@ public class UIManager : MonoBehaviour
         hud.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
+        choixPersonages.SetActive(false);
     }
     public void SetInGameHUDActive()
     {
@@ -49,6 +51,7 @@ public class UIManager : MonoBehaviour
         hud.SetActive(true);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
+        choixPersonages.SetActive(false);
     }
     public void SetPauseMenu()
     {
@@ -56,6 +59,7 @@ public class UIManager : MonoBehaviour
         hud.SetActive(false);
         pauseMenu.SetActive(true);
         gameOverMenu.SetActive(false);
+        choixPersonages.SetActive(false);
         Time.timeScale = 0;
     }
 
@@ -65,7 +69,18 @@ public class UIManager : MonoBehaviour
         hud.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(true);
+        choixPersonages.SetActive(false);
         StartCoroutine(ShowStars());
+    }
+
+    public void SetChoixPersonnage()
+    {
+        mainMenu.SetActive(false);
+        hud.SetActive(false);
+        pauseMenu.SetActive(false);
+        gameOverMenu.SetActive(false);
+        choixPersonages.SetActive(true);
+        Time.timeScale = 0;
     }
 
     IEnumerator ShowStars()

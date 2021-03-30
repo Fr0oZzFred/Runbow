@@ -21,7 +21,7 @@ public class ParticlesBehaviour : MonoBehaviour
         }
         if(position.y < positionTest.y)
         {
-            position.y += speed * Time.deltaTime;
+            position.y += speed * 1.5f * Time.deltaTime;
         }
         if(position.x < positionTest.x && position.y > positionTest.y)
         {

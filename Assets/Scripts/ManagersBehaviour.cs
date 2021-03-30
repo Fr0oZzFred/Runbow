@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ManagersBehaviour : MonoBehaviour
 {
-    void Awake()
+    void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        //GameManager.instance.SaveData();
+        //GameManager.instance.LoadData();
         SceneManager.LoadScene("MainMenu");
     }
 }

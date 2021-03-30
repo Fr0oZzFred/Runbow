@@ -5,14 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int candy = 0;
-    int totalLevelDone = 0;
+    public int totalLevelDone = 0;
     public int numberOfTails = 0;
     public bool[] level;
+    public int[] tailsCondition;
+    public int index = 0;
     public bool choixLicorne = false;
     public bool choixPegase = false;
     public bool choixPegaseNoir = false;
-    public int[] tailsCondition;
-    int index = 0;
     public enum GameState
     {
         MainMenu,
@@ -60,13 +60,13 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 1;
                 UIManager.instance.SetMainMenuActive();
                 break;
-            case GameState.InGame:
-                Time.timeScale = 1;
-                UIManager.instance.SetInGameHUDActive();
-                break;
             case GameState.ChoixPers:
                 Time.timeScale = 0;
                 UIManager.instance.SetChoixPersonnage();
+                break;
+            case GameState.InGame:
+                Time.timeScale = 1;
+                UIManager.instance.SetInGameHUDActive();
                 break;
             case GameState.Pause:
                 Time.timeScale = 0;
@@ -120,21 +120,21 @@ public class GameManager : MonoBehaviour
          choixLicorne = true;
          choixPegase = false;
          choixPegaseNoir = false;
-         ChangeGameStateInGame();
+         ChangeGameState(GameState.InGame);
     }
     public void ChoixPegase()
     {
         choixLicorne = false;
         choixPegase = true;
         choixPegaseNoir = false;
-        ChangeGameStateInGame();
+        ChangeGameState(GameState.InGame);
     }
     public void ChoixPegaseNoir()
     {
         choixLicorne = false;
         choixPegase = false;
         choixPegaseNoir = true;
-        ChangeGameStateInGame();
+        ChangeGameState(GameState.InGame);
     }
 }
 

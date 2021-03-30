@@ -45,6 +45,7 @@ public class ScenesManager : MonoBehaviour
 
     public void QuitGame()
     {
+        //GameManager.instance.SaveData();
         Application.Quit();
     }
 }

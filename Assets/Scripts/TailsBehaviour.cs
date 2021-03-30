@@ -6,13 +6,16 @@ public class TailsBehaviour : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
     public Sprite[] sprite;
-    void Start()
+    void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = transform.GetComponent<SpriteRenderer>();
     }
 
     public void ChangeTail(int numberTail)
     {
-        spriteRenderer.sprite = sprite[numberTail];
+        if( sprite[numberTail] != null)
+        {
+            spriteRenderer.sprite = sprite[numberTail];
+        }
     }
 }

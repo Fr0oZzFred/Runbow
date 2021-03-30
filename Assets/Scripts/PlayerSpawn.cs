@@ -23,15 +23,15 @@ public class PlayerSpawn : MonoBehaviour
     {
         if(GameManager.instance.choixLicorne == true)
         {
-            Instantiate(Licorne, new Vector3(0, 0, 0),Quaternion.identity);
+            Instantiate(Licorne, this.transform.position, Quaternion.identity);
         }
         else if(GameManager.instance.choixPegase == true)
         {
-            Instantiate(Pegase, new Vector3(0, 0, 0), Quaternion.identity);
+            Instantiate(Pegase, this.transform.position, Quaternion.identity);
         }
-        else if (GameManager.instance.choixPegase == true)
+        else if (GameManager.instance.choixPegaseNoir == true)
         {
-            Instantiate(PegaseNoir, new Vector3(0, 0, 0), Quaternion.identity);
+            Instantiate(PegaseNoir, this.transform.position, Quaternion.identity);
         }
     }
 }

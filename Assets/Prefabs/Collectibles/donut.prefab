@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 361573786332753807}
+  - component: {fileID: 361573786332753804}
   - component: {fileID: 361573786332753806}
   - component: {fileID: 361573786332753805}
-  - component: {fileID: 361573786332753804}
   m_Layer: 0
   m_Name: donut
   m_TagString: Untagged
@@ -33,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &361573786332753804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361573786332753795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc1d3031ac97be4893e1fdb4eba8ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 10
 --- !u!212 &361573786332753806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109,16 +122,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.69396067, y: 0.57305145}
   m_EdgeRadius: 0
---- !u!114 &361573786332753804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361573786332753795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc1d3031ac97be4893e1fdb4eba8ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 10

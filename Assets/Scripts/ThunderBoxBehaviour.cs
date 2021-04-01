@@ -11,7 +11,7 @@ public class ThunderBoxBehaviour : MonoBehaviour
     BackgroundBehaviour backgroundObject;
     Platform platform;
 
-    private void Start()
+    private void Awake()
     {
         backgroundObject = @object.GetComponent<BackgroundBehaviour>();
         if (backgroundObject)

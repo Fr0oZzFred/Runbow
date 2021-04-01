@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8470340378267111000}
+  - component: {fileID: 8470340378267110980}
   - component: {fileID: 8470340378267110983}
   - component: {fileID: 8470340378267110981}
-  - component: {fileID: 8470340378267110980}
   - component: {fileID: 8470340378267110982}
   m_Layer: 0
   m_Name: JumpPlatform
@@ -28,13 +28,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8470340378267110979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.29, y: -1.77, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 3180051149723415587}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8470340378267110980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8470340378267110979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c729415c0889ebd4b981bf9fd295b896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thunder: 0
+  platformType: 3
+  disappearSpeed: 0.01
+  jumpPower: 10
+  thunderBox: {fileID: 5196689265762262329}
+  platformSprite:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: b44c874a6e39fad4f905769cd34db744, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 92069018a7a57134b9a37ed98f3e4827, type: 3}
 --- !u!212 &8470340378267110983
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98,41 +120,19 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.047742724, y: -0.12120843}
+  m_Offset: {x: -0.049255848, y: 0.2027968}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.233333, y: 2.0833333}
+    pivot: {x: 0.5, y: 0.43}
+    oldSize: {x: 5, y: 2.75}
     newSize: {x: 27.454752, y: 6.1800003}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.717767, y: 0.90904}
+  m_Size: {x: 4.726555, y: 0.9083588}
   m_EdgeRadius: 0
---- !u!114 &8470340378267110980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470340378267110979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c729415c0889ebd4b981bf9fd295b896, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thunder: 0
-  platformType: 3
-  disappearSpeed: 0.01
-  jumpPower: 10
-  thunderBox: {fileID: 5196689265762262329}
-  platformSprite:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: b44c874a6e39fad4f905769cd34db744, type: 3}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 92069018a7a57134b9a37ed98f3e4827, type: 3}
 --- !u!50 &8470340378267110982
 Rigidbody2D:
   serializedVersion: 4
@@ -223,6 +223,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8877628613294144519, guid: 331185ca8332b0e4c98aebc025131a39,
         type: 3}
+      propertyPath: m_Size.y
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8877628613294144519, guid: 331185ca8332b0e4c98aebc025131a39,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8877628613294144519, guid: 331185ca8332b0e4c98aebc025131a39,
+        type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -234,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 9080876989027551100, guid: 331185ca8332b0e4c98aebc025131a39,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331185ca8332b0e4c98aebc025131a39, type: 3}

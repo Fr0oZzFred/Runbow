@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145198425872266422}
+  - component: {fileID: 4946654619662100487}
   - component: {fileID: 1110960777798753201}
   - component: {fileID: 8985017958184258903}
-  - component: {fileID: 4946654619662100487}
   m_Layer: 0
   m_Name: barbe_a_papa
   m_TagString: Untagged
@@ -33,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4946654619662100487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996814134654924241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc1d3031ac97be4893e1fdb4eba8ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 5
 --- !u!212 &1110960777798753201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109,16 +122,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.56318426, y: 0.81511533}
   m_EdgeRadius: 0
---- !u!114 &4946654619662100487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5996814134654924241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc1d3031ac97be4893e1fdb4eba8ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 5

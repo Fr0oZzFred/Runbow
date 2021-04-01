@@ -45,6 +45,14 @@ public class GameManager : MonoBehaviour
         addCandy(0);
     }
 
+    public void SaveData()
+    {
+        SaveSystem.SaveGameManager(this);
+    } 
+    public void LoadData()
+    {
+        SaveSystem.LoadGameManager();
+    }
     public void addCandy(int amount)
     {
         candy += amount;

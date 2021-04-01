@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public bool[] level;
     public int[] tailsCondition;
     public int index = 0;
+    public int firstLaunch = 0;
     public bool choixLicorne = false;
     public bool choixPegase = false;
     public bool choixPegaseNoir = false;
@@ -51,7 +52,27 @@ public class GameManager : MonoBehaviour
     } 
     public void LoadData()
     {
-        SaveSystem.LoadGameManager();
+        GameManagerData data = SaveSystem.LoadGameManager();
+        int i = 0;
+        candy = data.candy;
+        totalLevelDone = data.totalLevelDone;
+        numberOfTails = data.numberOfTails;
+        level = new bool[data.level.Length];
+        while(i < level.Length)
+        {
+            if(data.level[i] == 0)
+            {
+                level[i] = false;
+            }
+            else
+            {
+                level[i] = true;
+            }
+            i++;
+        }
+        index = data.index;
+        firstLaunch = data.firstLaunch;
+        addCandy(0);
     }
     public void addCandy(int amount)
     {

@@ -6,8 +6,7 @@ public static class SaveSystem
 {
     public static void SaveGameManager(GameManager gameManager)
     {
-        //string path = Application.persistentDataPath + "/GameManager.data";
-        string path = "C:/Users/frede/Desktop/Runbow";
+        string path = Application.persistentDataPath + "/GameManager.data";
         BinaryFormatter formatter = new BinaryFormatter();
         FileStream stream = new FileStream(path, FileMode.Create, FileAccess.Write);
         GameManagerData data = new GameManagerData(gameManager);
@@ -21,7 +20,7 @@ public static class SaveSystem
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
+            FileStream stream = new FileStream(path, FileMode.Open, FileAccess.Read);
             GameManagerData data = formatter.Deserialize(stream) as GameManagerData;
             stream.Close();
             return data;

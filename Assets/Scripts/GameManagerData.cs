@@ -5,21 +5,33 @@ using UnityEngine;
 [System.Serializable]
 public class GameManagerData
 {
-    public int candy = 0;
-    public int totalLevelDone = 0;
-    public int numberOfTails = 0;
-    public bool[] level;
-    public int index = 0;
+    public int candy;
+    public int totalLevelDone;
+    public int numberOfTails;
+    public int[] level;
+    public int index;
+    public int firstLaunch;
 
     public GameManagerData(GameManager gameManager)
     {
+        int i = 0;
         candy = gameManager.candy;
         totalLevelDone = gameManager.totalLevelDone;
         numberOfTails = gameManager.numberOfTails;
-        for (int i = 0; 0 < level.Length; i++)
+        level = new int[gameManager.level.Length];
+        while(i < level.Length)
         {
-            level[i] = gameManager.level[i];
+            if(gameManager.level[i])
+            {
+                level[i] = 1;
+            }
+            else
+            {
+                level[i] = 0;
+            }
+            i++;
         }
         index = gameManager.index;
+        firstLaunch = gameManager.firstLaunch;
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3697932206325600972}
   - component: {fileID: -457921842229253359}
   m_Layer: 0
-  m_Name: "\xE9toile"
+  m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518a41da0aa7d9c43848c24e172cdffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  star: 1
+  speed: 2
 --- !u!1001 &2729243149230451393
 PrefabInstance:
   m_ObjectHideFlags: 0

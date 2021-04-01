@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
     public GameObject nextLevel;
     public GameObject choixPersonages;
     public GameObject[] stars;
+    public GameObject starUI;
+    public GameObject candyUI;
     public Text textScore;
     public Text textCandy;
     private static UIManager _instance;

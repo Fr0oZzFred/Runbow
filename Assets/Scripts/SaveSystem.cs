@@ -6,7 +6,8 @@ public static class SaveSystem
 {
     public static void SaveGameManager(GameManager gameManager)
     {
-        string path = Application.persistentDataPath + "/GameManager.data";
+        //string path = Application.persistentDataPath + "/GameManager.data";
+        string path = "C:/Users/frede/Desktop/Runbow";
         BinaryFormatter formatter = new BinaryFormatter();
         FileStream stream = new FileStream(path, FileMode.Create, FileAccess.Write);
         GameManagerData data = new GameManagerData(gameManager);

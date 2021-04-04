@@ -3044,6 +3044,7 @@ MonoBehaviour:
   level: 00000000000000000000
   tailsCondition: 0100000002000000030000000400000005000000060000000700000008000000090000000a000000
   index: 0
+  firstLaunch: 0
   choixLicorne: 0
   choixPegase: 0
   choixPegaseNoir: 0

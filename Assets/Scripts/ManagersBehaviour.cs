@@ -18,6 +18,7 @@ public class ManagersBehaviour : MonoBehaviour
         {
             GameManager.instance.SaveData();
         }
+        GameManager.instance.ChangeGameState(GameManager.GameState.MainMenu);
         SceneManager.LoadScene("MainMenu");
     }
 }

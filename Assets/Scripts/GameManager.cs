@@ -149,21 +149,18 @@ public class GameManager : MonoBehaviour
          choixLicorne = true;
          choixPegase = false;
          choixPegaseNoir = false;
-         ChangeGameState(GameState.InGame);
     }
     public void ChoixPegase()
     {
         choixLicorne = false;
         choixPegase = true;
         choixPegaseNoir = false;
-        ChangeGameState(GameState.InGame);
     }
     public void ChoixPegaseNoir()
     {
         choixLicorne = false;
         choixPegase = false;
         choixPegaseNoir = true;
-        ChangeGameState(GameState.InGame);
     }
 }
 

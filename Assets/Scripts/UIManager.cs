@@ -11,11 +11,14 @@ public class UIManager : MonoBehaviour
     public GameObject gameOverMenu;
     public GameObject nextLevel;
     public GameObject choixPersonages;
+    public GameObject gameOverGood;
+    public GameObject gameOverBad;
     public GameObject[] stars;
     public GameObject starUI;
     public GameObject candyUI;
     public Text textScore;
     public Text textCandy;
+    public GameObject[] levelButton;
     private static UIManager _instance;
     public static UIManager instance
     {
@@ -46,6 +49,7 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         choixPersonages.SetActive(false);
+        UnlockLevelButton();
     }
     public void SetInGameHUDActive()
     {
@@ -62,7 +66,6 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(true);
         gameOverMenu.SetActive(false);
         choixPersonages.SetActive(false);
-        Time.timeScale = 0;
     }
 
     public void SetGameOverMenuActive()
@@ -82,17 +85,19 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         choixPersonages.SetActive(true);
-        Time.timeScale = 0;
     }
 
     IEnumerator ShowStars()
     {
+        gameOverGood.SetActive(false);
+        gameOverBad.SetActive(false);
         stars[0].SetActive(false);
         stars[1].SetActive(false);
         stars[2].SetActive(false);
         nextLevel.SetActive(false);
         if (LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.thirdStar)
         {
+            gameOverGood.SetActive(true);
             stars[0].SetActive(true);
             nextLevel.SetActive(true);
             yield return new WaitForSeconds(1.0f);
@@ -103,6 +108,7 @@ public class UIManager : MonoBehaviour
         }
         else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.secondStar)
         {
+            gameOverGood.SetActive(true);
             stars[0].SetActive(true);
             nextLevel.SetActive(true);
             yield return new WaitForSeconds(1.0f);
@@ -111,11 +117,13 @@ public class UIManager : MonoBehaviour
         }
         else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.firstStar)
         {
+            gameOverGood.SetActive(true);
             stars[0].SetActive(true);
             nextLevel.SetActive(true);
         }
         else
         {
+            gameOverBad.SetActive(true);
             stars[0].SetActive(false);
             stars[1].SetActive(false);
             stars[2].SetActive(false);
@@ -123,4 +131,11 @@ public class UIManager : MonoBehaviour
         }
     }
     
+    void UnlockLevelButton()
+    {
+        for(int i =0; i < GameManager.instance.totalLevelDone+1; i++)
+        {
+            levelButton[i].SetActive(true);
+        }
+    }
 }

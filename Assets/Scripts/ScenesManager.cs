@@ -19,9 +19,9 @@ public class ScenesManager : MonoBehaviour
         _instance = this;
     }
 
-    public void LoadNextScene()
+    public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(GameManager.instance.totalLevelDone+1);
         GameManager.instance.ChangeGameState(GameManager.GameState.InGame);
     }
 

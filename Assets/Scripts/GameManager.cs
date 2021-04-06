@@ -85,27 +85,22 @@ public class GameManager : MonoBehaviour
         switch (_gameState)
         {
             case GameState.MainMenu:
-                Cursor.visible = true;
                 Time.timeScale = 1;
                 UIManager.instance.SetMainMenuActive();
                 break;
             case GameState.ChoixPers:
-                Cursor.visible = true;
                 Time.timeScale = 0;
                 UIManager.instance.SetChoixPersonnage();
                 break;
             case GameState.InGame:
-                Cursor.visible = false;
                 Time.timeScale = 1;
                 UIManager.instance.SetInGameHUDActive();
                 break;
             case GameState.Pause:
-                Cursor.visible = true;
                 Time.timeScale = 0;
                 UIManager.instance.SetPauseMenu();
                 break;
             case GameState.Death:
-                Cursor.visible = true;
                 LevelManager.instance.speedBackground = 0;
                 LevelManager.instance.speedPlatform = 0;
                 UIManager.instance.SetGameOverMenuActive();

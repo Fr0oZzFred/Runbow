@@ -63,6 +63,8 @@ public class Platform : MonoBehaviour
             }
             else if(PlatformStates == PlatformState.Jump)
             {
+                Animator boing = GetComponent<Animator>();
+                boing.SetTrigger("Bond");
                 player.Jump(jumpPower);
             }
 

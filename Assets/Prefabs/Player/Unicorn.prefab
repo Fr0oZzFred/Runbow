@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c20f1aa51dc9841b4e1fcecfa39e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 7
+  jumpPower: 9
   life: 2
   starEffect: {fileID: 4944622092286213508, guid: 537acb13f7e40c54a9aa3a413bc4dce8,
     type: 3}
@@ -202,7 +202,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.31106377, y: -0.05868864}
+  m_Offset: {x: -0.2361213, y: -0.05868864}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -213,7 +213,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3850555, y: 4.8852415}
+  m_Size: {x: 3.2351706, y: 4.8852415}
   m_EdgeRadius: 0
 --- !u!212 &5077575371301220415
 SpriteRenderer:

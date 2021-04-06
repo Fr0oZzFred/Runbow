@@ -10,6 +10,7 @@ public class ThunderBoxBehaviour : MonoBehaviour
     public GameObject @object;
     BackgroundBehaviour backgroundObject;
     Platform platform;
+    Animator eclair;
 
     private void Awake()
     {
@@ -27,15 +28,18 @@ public class ThunderBoxBehaviour : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerBehaviour player = collision.GetComponent<PlayerBehaviour>();
-        if(player != null && background)
+        eclair = GetComponent<Animator>();
+        if (player != null && background)
         {
             if(backgroundObject.random)
             {
                 backgroundObject.ChangeBKColorState((BackgroundBehaviour.BackGroundColorState)backgroundObject.RandomBK());
+                eclair.SetTrigger("Trigger");
             }
             else
             {
                 backgroundObject.ChangeBKColorState((BackgroundBehaviour.BackGroundColorState)color);
+                eclair.SetTrigger("Trigger");
             }
         }
         else if(player != null)

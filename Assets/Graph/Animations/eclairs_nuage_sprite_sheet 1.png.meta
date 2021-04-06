@@ -1,0 +1,512 @@
+fileFormatVersion: 2
+guid: 61a59596845759d4fb5ea296774e33ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1836824867461678480
+    second: eclairs_nuage_sprite_sheet_0
+  - first:
+      213: -2586010652485064708
+    second: eclairs_nuage_sprite_sheet_1
+  - first:
+      213: 3588664052655146447
+    second: eclairs_nuage_sprite_sheet_2
+  - first:
+      213: -6733892310042930940
+    second: eclairs_nuage_sprite_sheet_3
+  - first:
+      213: -8777239882359694588
+    second: eclairs_nuage_sprite_sheet_4
+  - first:
+      213: 1166983626692276921
+    second: eclairs_nuage_sprite_sheet_5
+  - first:
+      213: 340142623031227400
+    second: eclairs_nuage_sprite_sheet_6
+  - first:
+      213: 3894245087225145347
+    second: eclairs_nuage_sprite_sheet_7
+  - first:
+      213: 1967469448884358128
+    second: eclairs_nuage_sprite_sheet_8
+  - first:
+      213: 892457840910493003
+    second: eclairs_nuage_sprite_sheet_9
+  - first:
+      213: -5225446033046681300
+    second: eclairs_nuage_sprite_sheet_10
+  - first:
+      213: 812013629929248753
+    second: eclairs_nuage_sprite_sheet_11
+  - first:
+      213: -7020559239734474040
+    second: eclairs_nuage_sprite_sheet_12
+  - first:
+      213: 5790174206135841860
+    second: eclairs_nuage_sprite_sheet_13
+  - first:
+      213: 8151548606890043374
+    second: eclairs_nuage_sprite_sheet_14
+  - first:
+      213: -935679323451810289
+    second: eclairs_nuage_sprite_sheet_15
+  - first:
+      213: -3600177042867454430
+    second: eclairs_nuage_sprite_sheet_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09548ab2c76bd7910800000000000000
+      internalID: 1836824867461678480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf760494305ac1cd0800000000000000
+      internalID: -2586010652485064708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc549bc31fe7dc130800000000000000
+      internalID: 3588664052655146447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40118282f986c82a0800000000000000
+      internalID: -6733892310042930940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3688
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b1f8fa4daf03680800000000000000
+      internalID: -8777239882359694588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4610
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2b0bfec65f13010800000000000000
+      internalID: 1166983626692276921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5532
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804febad9ed68b400800000000000000
+      internalID: 340142623031227400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6454
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3086d5436432b0630800000000000000
+      internalID: 3894245087225145347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 7376
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb8f272a0bdd4b10800000000000000
+      internalID: 1967469448884358128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 8298
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b456b788da5a26c00800000000000000
+      internalID: 892457840910493003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 9220
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29474fb48c7b77b0800000000000000
+      internalID: -5225446033046681300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 10142
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f755bc181ad44b00800000000000000
+      internalID: 812013629929248753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 11064
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca4a076196f19e90800000000000000
+      internalID: -7020559239734474040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 11986
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4443b5843c4da5050800000000000000
+      internalID: 5790174206135841860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 12908
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7e20be44e102170800000000000000
+      internalID: 8151548606890043374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 13830
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e1afddc9cc303f0800000000000000
+      internalID: -935679323451810289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eclairs_nuage_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 14752
+        y: 0
+        width: 922
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e7e57dd0a990ec0800000000000000
+      internalID: -3600177042867454430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

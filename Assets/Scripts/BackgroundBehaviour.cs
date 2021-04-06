@@ -203,5 +203,4 @@ public class BackgroundBehaviour : MonoBehaviour
             time = 0;
         }
     }
-
 }

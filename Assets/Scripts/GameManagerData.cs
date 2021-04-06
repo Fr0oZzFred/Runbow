@@ -32,6 +32,5 @@ public class GameManagerData
             i++;
         }
         index = gameManager.index;
-        firstLaunch = gameManager.firstLaunch;
     }
 }

@@ -133,7 +133,7 @@ public class UIManager : MonoBehaviour
     
     void UnlockLevelButton()
     {
-        for(int i =0; i < GameManager.instance.totalLevelDone+1; i++)
+        for(int i =0; i <= GameManager.instance.totalLevelDone; i++)
         {
             levelButton[i].SetActive(true);
         }

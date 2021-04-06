@@ -5,12 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int candy = 0;
+    public int totalLevel = 5;
     public int totalLevelDone = 0;
     public int numberOfTails = 0;
     public bool[] level;
     public int[] tailsCondition;
     public int index = 0;
-    public int firstLaunch = 0;
     public bool choixLicorne = false;
     public bool choixPegase = false;
     public bool choixPegaseNoir = false;
@@ -71,7 +71,6 @@ public class GameManager : MonoBehaviour
             i++;
         }
         index = data.index;
-        firstLaunch = data.firstLaunch;
         addCandy(0);
     }
     public void addCandy(int amount)
@@ -86,22 +85,27 @@ public class GameManager : MonoBehaviour
         switch (_gameState)
         {
             case GameState.MainMenu:
+                Cursor.visible = true;
                 Time.timeScale = 1;
                 UIManager.instance.SetMainMenuActive();
                 break;
             case GameState.ChoixPers:
+                Cursor.visible = true;
                 Time.timeScale = 0;
                 UIManager.instance.SetChoixPersonnage();
                 break;
             case GameState.InGame:
+                Cursor.visible = false;
                 Time.timeScale = 1;
                 UIManager.instance.SetInGameHUDActive();
                 break;
             case GameState.Pause:
+                Cursor.visible = true;
                 Time.timeScale = 0;
                 UIManager.instance.SetPauseMenu();
                 break;
             case GameState.Death:
+                Cursor.visible = true;
                 LevelManager.instance.speedBackground = 0;
                 LevelManager.instance.speedPlatform = 0;
                 UIManager.instance.SetGameOverMenuActive();

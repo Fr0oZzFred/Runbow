@@ -21,8 +21,15 @@ public class ScenesManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(GameManager.instance.totalLevelDone+1);
-        GameManager.instance.ChangeGameState(GameManager.GameState.InGame);
+        if (GameManager.instance.totalLevelDone < GameManager.instance.totalLevel)
+        {
+            SceneManager.LoadScene(GameManager.instance.totalLevelDone + 1);
+            GameManager.instance.ChangeGameState(GameManager.GameState.InGame);
+        }
+        else
+        {
+            LoadMainMenu();
+        }
     }
 
     public void LoadScene(int index)

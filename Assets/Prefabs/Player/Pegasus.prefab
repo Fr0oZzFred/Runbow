@@ -53,6 +53,12 @@ MonoBehaviour:
     type: 3}
   candyEffect: {fileID: 488157918910100448, guid: f8cb6eeb12f353b4ba643d5786c3a375,
     type: 3}
+  textPerfect: {fileID: 3213326888182427711, guid: 40cfff280ca422f449f9912251508b28,
+    type: 3}
+  textGood: {fileID: 7737180497251852780, guid: 7bbe29441de315a4689a6aae9c51b298,
+    type: 3}
+  textMiss: {fileID: 3688844525812520726, guid: ac7007ab7f50dab418b35ade91950e9b,
+    type: 3}
   tailsGO: {fileID: 8986663668862008409}
   playerSkins:
   - {fileID: 21300000, guid: 6b27ff04ca6f3b449ac92dd235ffead5, type: 3}

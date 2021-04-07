@@ -8,6 +8,9 @@ public class PlayerBehaviour : MonoBehaviour
     public int life = 2;
     public GameObject starEffect;
     public GameObject candyEffect;
+    public GameObject textPerfect;
+    public GameObject textGood;
+    public GameObject textMiss;
     public GameObject tailsGO;
     TailsBehaviour tails;
     SpriteRenderer spriteRenderer;
@@ -95,14 +98,15 @@ public class PlayerBehaviour : MonoBehaviour
         if(score == "perfect")
         {
             GameObject starObject = Instantiate(starEffect, this.transform.position, Quaternion.identity);
+            GameObject textPerfectObject = Instantiate(textPerfect, this.transform.position, Quaternion.identity);
         }
         else if (score == "good")
         {
-
+            GameObject textGoodObject = Instantiate(textGood, this.transform.position, Quaternion.identity);
         }
         else
         {
-
+            GameObject textMissObject = Instantiate(textMiss, this.transform.position, Quaternion.identity);
         }
     }
 

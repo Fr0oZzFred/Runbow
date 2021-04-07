@@ -780,21 +780,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: JumpPlatform
       objectReference: {fileID: 0}
-    - target: {fileID: 8470340378267110981, guid: 856a6c53993c47a468e2c593bd6aa9b8,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470340378267110981, guid: 856a6c53993c47a468e2c593bd6aa9b8,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470340378267110981, guid: 856a6c53993c47a468e2c593bd6aa9b8,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.75
-      objectReference: {fileID: 0}
     - target: {fileID: 8470340378267111000, guid: 856a6c53993c47a468e2c593bd6aa9b8,
         type: 3}
       propertyPath: m_RootOrder
@@ -852,31 +837,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 856a6c53993c47a468e2c593bd6aa9b8, type: 3}
---- !u!1 &1253245392 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8470340378267110979, guid: 856a6c53993c47a468e2c593bd6aa9b8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1253245391}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1253245393
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253245392}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f14a7cfd71c73d64faa588cd8d996026, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1260018548
 PrefabInstance:
   m_ObjectHideFlags: 0

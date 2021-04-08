@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a027f3e7e95c2e6458c1abe1941629cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,6 +98,3 @@ MonoBehaviour:
   distance: 4
   timer: 1
   disappearSpeed: 0.01
-  particles:
-  - {fileID: 1399417042280113775, guid: fde8f010eb0053549b016a1304a8adb2, type: 3}
-  done: 0

@@ -39,39 +39,27 @@ public class SoundManager : MonoBehaviour
     
     public void PlayMainMenuTheme()
     {
-        if(inGameTheme.isPlaying || badGameOverSound.isPlaying || goodGameOverSound.isPlaying)
-        {
-            inGameTheme.Stop();
-            badGameOverSound.Stop();
-            goodGameOverSound.Stop();
-        }
+        inGameTheme.Stop();
+        badGameOverSound.Stop();
+        goodGameOverSound.Stop();
         mainMenuTheme.Play();
     }
     public void PlayInGameTheme()
     {
-        if(mainMenuTheme.isPlaying || badGameOverSound.isPlaying || goodGameOverSound.isPlaying)
-        {
-            mainMenuTheme.Stop();
-            badGameOverSound.Stop();
-            goodGameOverSound.Stop();
-        }
+        mainMenuTheme.Stop();
+        badGameOverSound.Stop();
+        goodGameOverSound.Stop();
         inGameTheme.Play();
     }
 
     public void PlayBadGameOverTheme()
     {
-        if(inGameTheme.isPlaying)
-        {
-            inGameTheme.Stop();
-        }
+        inGameTheme.Stop();
         badGameOverSound.Play();
     }
     public void PlayGoodGameOverTheme()
     {
-        if (inGameTheme.isPlaying)
-        {
-            inGameTheme.Stop();
-        }
+        inGameTheme.Stop();
         goodGameOverSound.Play();
     }
 }

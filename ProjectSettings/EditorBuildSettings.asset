@@ -24,13 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 5.unity
     guid: d679a38468d20b341b0339732c9df314
   - enabled: 1
-    path: Assets/Scenes/Level 10.unity
-    guid: 7254c10ba6f47d84ebf6b8214966f9bd
-  - enabled: 1
     path: Assets/Scenes/Level 6.unity
     guid: 75a6eadc3fd0cf54aa55143972275f05
   - enabled: 1
-<<<<<<< Updated upstream
     path: Assets/Scenes/Level 7.unity
     guid: 0e82e42c201ae264e80781fa34436635
   - enabled: 1
@@ -40,17 +36,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 9.unity
     guid: adf8519758121da44acbc992e04c5df8
   - enabled: 1
-    path: "Assets/Scenes/C\xE9dric.unity"
-    guid: 89754c853f4e1034dbb3c61899d40445
+    path: Assets/Scenes/Level 10.unity
+    guid: 7254c10ba6f47d84ebf6b8214966f9bd
+  - enabled: 0
+    path: Assets/Scenes/Level 11.unity
+    guid: 7958ae781e57ffa478054d78b146a869
+  - enabled: 0
+    path: Assets/Scenes/Level 12.unity
+    guid: 3ae192e9fe4671a4791d93e427c4e3cc
+  - enabled: 0
+    path: Assets/Scenes/Level 13.unity
+    guid: 927c1d247f8de884ea6e0279db2d0397
+  - enabled: 0
+    path: Assets/Scenes/Level 14.unity
+    guid: 1336982006bda414ca278ac42cd52ecc
+  - enabled: 0
+    path: Assets/Scenes/Level 15.unity
+    guid: e2ff8408b6f11904994cebadb14d1223
   - enabled: 1
-=======
->>>>>>> Stashed changes
     path: Assets/Scenes/MainMenu.unity
     guid: 9a3dcf9b72ca6884ca4d311ffe694278
-  - enabled: 0
-    path: Assets/Scenes/Fred.unity
-    guid: aab143bc94f89e242bf347fa029bbed2
-  - enabled: 1
-    path: "Assets/Scenes/C\xE9dric.unity"
-    guid: 89754c853f4e1034dbb3c61899d40445
   m_configObjects: {}

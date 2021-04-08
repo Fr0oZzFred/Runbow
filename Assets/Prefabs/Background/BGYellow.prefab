@@ -74,6 +74,8 @@ MonoBehaviour:
   color: 0
   platformType: 0
   object: {fileID: 6328517154389031201}
+  Flash: {fileID: 0}
+  eclair: {fileID: 0}
 --- !u!1 &6328517154389031201
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,7 +89,7 @@ GameObject:
   - component: {fileID: 7275209737459507675}
   - component: {fileID: 8677125048529916159}
   m_Layer: 0
-  m_Name: BKYellow
+  m_Name: BGYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +173,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 94b4f6ba6de558e438f6aa954b754c3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

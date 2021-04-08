@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1496319592701162189}
   - component: {fileID: 602942808215602153}
   m_Layer: 0
-  m_Name: BKGreen
+  m_Name: BGGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: d2f76addabc6e1143a7e9b4e32124e63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -209,3 +209,5 @@ MonoBehaviour:
   color: 0
   platformType: 0
   object: {fileID: 2875032529734642231}
+  Flash: {fileID: 0}
+  eclair: {fileID: 0}

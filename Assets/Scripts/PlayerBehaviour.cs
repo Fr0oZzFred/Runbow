@@ -12,6 +12,8 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject textGood;
     public GameObject textMiss;
     public GameObject tailsGO;
+    public GameObject[] particlesPrefab;
+    GameObject partcilesGO;
     TailsBehaviour tails;
     SpriteRenderer spriteRenderer;
     public Sprite[] playerSkins;
@@ -19,6 +21,7 @@ public class PlayerBehaviour : MonoBehaviour
     float input2 = 0;
     float input3 = 0;
     float input4 = 0;
+    int temp;
     Rigidbody2D rigidbody2d;
     public enum MoveState
     {
@@ -72,6 +75,7 @@ public class PlayerBehaviour : MonoBehaviour
         ChangeColor(input1, input2, input3, input4);
         Pause();
         VerifDeath();
+        temp = Random.Range(0, particlesPrefab.Length);
     }
 
     public void Jump(float jump)
@@ -95,8 +99,10 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void AnimationScore(string score)
     {
+        Destroy(partcilesGO);
         if(score == "perfect")
         {
+            partcilesGO = Instantiate(particlesPrefab[temp], this.transform.position, Quaternion.identity);
             GameObject starObject = Instantiate(starEffect, this.transform.position, Quaternion.identity);
             GameObject textPerfectObject = Instantiate(textPerfect, this.transform.position, Quaternion.identity);
             SoundManager.instance.perfectSound.Play();

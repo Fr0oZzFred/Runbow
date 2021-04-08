@@ -6588,7 +6588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   candy: 0
-  totalLevel: 6
+  totalLevel: 10
   totalLevelDone: 0
   numberOfTails: 0
   level: 00000000000000000000

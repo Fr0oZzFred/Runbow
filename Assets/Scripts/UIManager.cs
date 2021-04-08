@@ -156,6 +156,9 @@ public class UIManager : MonoBehaviour
         {
             levelButton[i].SetActive(true);
         }
-        levelButton[GameManager.instance.totalLevelDone].SetActive(true);
+        if (levelButton.Length >= GameManager.instance.totalLevelDone+1)
+        {
+            levelButton[GameManager.instance.totalLevelDone].SetActive(true);
+        }
     }
 }

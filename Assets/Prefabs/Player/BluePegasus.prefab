@@ -60,6 +60,12 @@ MonoBehaviour:
   textMiss: {fileID: 3688844525812520726, guid: ac7007ab7f50dab418b35ade91950e9b,
     type: 3}
   tailsGO: {fileID: 7997893923128691934}
+  particlesPrefab:
+  - {fileID: 1399417042280113775, guid: fde8f010eb0053549b016a1304a8adb2, type: 3}
+  - {fileID: 1786369205337481628, guid: 4dbea3c50e5cc1d43b96bac6b390e07a, type: 3}
+  - {fileID: 4139430741823957426, guid: 44b913096b8c9f54fb12af36bc94aa10, type: 3}
+  - {fileID: 8755589147698087379, guid: 8e21aa17aed4e0f44b053ffe8d82d090, type: 3}
+  - {fileID: 5189895430684201611, guid: 05c86c3a752658542ba267eef013b422, type: 3}
   playerSkins:
   - {fileID: 21300000, guid: 12ebfcedcf6ff77459c141954b5b2305, type: 3}
   - {fileID: 21300000, guid: 5389bcb14aa79df408fc9edd081a27b7, type: 3}

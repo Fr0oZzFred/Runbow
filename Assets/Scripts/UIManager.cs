@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public GameObject mainMenu;
+    public GameObject menuTuto;
+    public GameObject choixPersonages;
     public GameObject hud;
     public GameObject pauseMenu;
     public GameObject gameOverMenu;
     public GameObject nextLevel;
-    public GameObject choixPersonages;
     public GameObject gameOverGood;
     public GameObject gameOverBad;
     public GameObject[] stars;
@@ -45,15 +46,26 @@ public class UIManager : MonoBehaviour
     public void SetMainMenuActive()
     {
         mainMenu.SetActive(true);
+        menuTuto.SetActive(false);
         hud.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         choixPersonages.SetActive(false);
         UnlockLevelButton();
     }
+    public void SetMenuTutoActive()
+    {
+        mainMenu.SetActive(false);
+        menuTuto.SetActive(true);
+        hud.SetActive(false);
+        pauseMenu.SetActive(false);
+        gameOverMenu.SetActive(false);
+        choixPersonages.SetActive(false);
+    }
     public void SetInGameHUDActive()
     {
         mainMenu.SetActive(false);
+        menuTuto.SetActive(false);
         hud.SetActive(true);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
@@ -62,6 +74,7 @@ public class UIManager : MonoBehaviour
     public void SetPauseMenu()
     {
         mainMenu.SetActive(false);
+        menuTuto.SetActive(false);
         hud.SetActive(false);
         pauseMenu.SetActive(true);
         gameOverMenu.SetActive(false);
@@ -71,6 +84,7 @@ public class UIManager : MonoBehaviour
     public void SetGameOverMenuActive()
     {
         mainMenu.SetActive(false);
+        menuTuto.SetActive(false);
         hud.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(true);
@@ -81,6 +95,7 @@ public class UIManager : MonoBehaviour
     public void SetChoixPersonnage()
     {
         mainMenu.SetActive(false);
+        menuTuto.SetActive(false);
         hud.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);

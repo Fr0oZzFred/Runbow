@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public bool[] level;
     public int[] tailsCondition;
     public int index = 0;
+    public int premierTuto = 0;
     public bool choixLicorne = false;
     public bool choixPegase = false;
     public bool choixPegaseNoir = false;
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
             i++;
         }
         index = data.index;
+        premierTuto = data.premierTuto;
         addCandy(0);
     }
     public void addCandy(int amount)
@@ -90,7 +92,15 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.ChoixPers:
                 Time.timeScale = 0;
-                UIManager.instance.SetChoixPersonnage();
+                if(premierTuto == 0)
+                {
+                    premierTuto = 1;
+                    UIManager.instance.SetMenuTutoActive();
+                }
+                else
+                {
+                    UIManager.instance.SetChoixPersonnage();
+                }
                 break;
             case GameState.InGame:
                 Time.timeScale = 1;

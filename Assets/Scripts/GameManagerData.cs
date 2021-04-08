@@ -11,6 +11,7 @@ public class GameManagerData
     public int[] level;
     public int index;
     public int firstLaunch;
+    public int premierTuto;
 
     public GameManagerData(GameManager gameManager)
     {
@@ -32,5 +33,6 @@ public class GameManagerData
             i++;
         }
         index = gameManager.index;
+        premierTuto = gameManager.premierTuto;
     }
 }

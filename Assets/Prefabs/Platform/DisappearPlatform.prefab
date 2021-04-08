@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thunder: 0
   platformType: 2
-  disappearSpeed: 0.01
+  disappearSpeed: 0.1
   jumpPower: 10
   thunderBox: {fileID: 8002559471204406242}
   platformSprite:

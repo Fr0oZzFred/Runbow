@@ -5,11 +5,14 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource mainMenuTheme;
+    public AudioSource inGameTheme;
+    public AudioSource goodGameOverSound;
+    public AudioSource badGameOverSound;
     public AudioSource buttonSound;
     public AudioSource backButtonSound;
-    public AudioSource inGameTheme;
-    public AudioSource badGameOverSound;
-    public AudioSource goodGameOverSound;
+    public AudioSource perfectSound;
+    public AudioSource goodSound;
+    public AudioSource missSound;
     private static SoundManager _instance;
     public static SoundManager instance
     {
@@ -36,18 +39,39 @@ public class SoundManager : MonoBehaviour
     
     public void PlayMainMenuTheme()
     {
-
+        if(inGameTheme.isPlaying || badGameOverSound.isPlaying || goodGameOverSound.isPlaying)
+        {
+            inGameTheme.Stop();
+            badGameOverSound.Stop();
+            goodGameOverSound.Stop();
+        }
+        mainMenuTheme.Play();
     }
-    public void InGameTheme()
+    public void PlayInGameTheme()
     {
-
+        if(mainMenuTheme.isPlaying || badGameOverSound.isPlaying || goodGameOverSound.isPlaying)
+        {
+            mainMenuTheme.Stop();
+            badGameOverSound.Stop();
+            goodGameOverSound.Stop();
+        }
+        inGameTheme.Play();
     }
-    public void BadGameOverTheme()
-    {
 
+    public void PlayBadGameOverTheme()
+    {
+        if(inGameTheme.isPlaying)
+        {
+            inGameTheme.Stop();
+        }
+        badGameOverSound.Play();
     }
-    public void GoodGameOverTheme()
+    public void PlayGoodGameOverTheme()
     {
-
+        if (inGameTheme.isPlaying)
+        {
+            inGameTheme.Stop();
+        }
+        goodGameOverSound.Play();
     }
 }

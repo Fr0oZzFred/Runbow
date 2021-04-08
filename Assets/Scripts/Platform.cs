@@ -4,7 +4,7 @@ public class Platform : MonoBehaviour
 {
     public bool thunder;
     public int platformType;
-    public float disappearSpeed = 0.01f;
+    public float disappearSpeed = 0.1f;
     public float jumpPower = 10;
     public GameObject thunderBox;
     SpriteRenderer rend;

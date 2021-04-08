@@ -89,6 +89,7 @@ public class GameManager : MonoBehaviour
             case GameState.MainMenu:
                 Time.timeScale = 1;
                 UIManager.instance.SetMainMenuActive();
+                SoundManager.instance.PlayMainMenuTheme();
                 break;
             case GameState.ChoixPers:
                 Time.timeScale = 0;
@@ -105,10 +106,19 @@ public class GameManager : MonoBehaviour
             case GameState.InGame:
                 Time.timeScale = 1;
                 UIManager.instance.SetInGameHUDActive();
+                if(SoundManager.instance.inGameTheme.isPlaying)
+                {
+                    SoundManager.instance.inGameTheme.UnPause();
+                }
+                else
+                {
+                    SoundManager.instance.PlayInGameTheme();
+                }
                 break;
             case GameState.Pause:
                 Time.timeScale = 0;
                 UIManager.instance.SetPauseMenu();
+                SoundManager.instance.inGameTheme.Pause();
                 break;
             case GameState.Death:
                 LevelManager.instance.speedBackground = 0;

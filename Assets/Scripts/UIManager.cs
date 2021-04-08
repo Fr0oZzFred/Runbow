@@ -112,6 +112,7 @@ public class UIManager : MonoBehaviour
         nextLevel.SetActive(false);
         if (LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.thirdStar)
         {
+            SoundManager.instance.PlayGoodGameOverTheme();
             gameOverGood.SetActive(true);
             stars[0].SetActive(true);
             nextLevel.SetActive(true);
@@ -123,6 +124,7 @@ public class UIManager : MonoBehaviour
         }
         else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.secondStar)
         {
+            SoundManager.instance.PlayGoodGameOverTheme();
             gameOverGood.SetActive(true);
             stars[0].SetActive(true);
             nextLevel.SetActive(true);
@@ -132,12 +134,14 @@ public class UIManager : MonoBehaviour
         }
         else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.firstStar)
         {
+            SoundManager.instance.PlayGoodGameOverTheme();
             gameOverGood.SetActive(true);
             stars[0].SetActive(true);
             nextLevel.SetActive(true);
         }
         else
         {
+            SoundManager.instance.PlayBadGameOverTheme();
             gameOverBad.SetActive(true);
             stars[0].SetActive(false);
             stars[1].SetActive(false);
@@ -152,5 +156,6 @@ public class UIManager : MonoBehaviour
         {
             levelButton[i].SetActive(true);
         }
+        levelButton[GameManager.instance.totalLevelDone].SetActive(true);
     }
 }

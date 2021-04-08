@@ -99,14 +99,17 @@ public class PlayerBehaviour : MonoBehaviour
         {
             GameObject starObject = Instantiate(starEffect, this.transform.position, Quaternion.identity);
             GameObject textPerfectObject = Instantiate(textPerfect, this.transform.position, Quaternion.identity);
+            SoundManager.instance.perfectSound.Play();
         }
         else if (score == "good")
         {
             GameObject textGoodObject = Instantiate(textGood, this.transform.position, Quaternion.identity);
+            SoundManager.instance.goodSound.Play();
         }
         else
         {
             GameObject textMissObject = Instantiate(textMiss, this.transform.position, Quaternion.identity);
+            SoundManager.instance.missSound.Play();
         }
     }
 

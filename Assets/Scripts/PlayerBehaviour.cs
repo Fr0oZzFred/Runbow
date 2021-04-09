@@ -75,7 +75,6 @@ public class PlayerBehaviour : MonoBehaviour
         ChangeColor(input1, input2, input3, input4);
         Pause();
         VerifDeath();
-        temp = Random.Range(0, particlesPrefab.Length);
     }
 
     public void Jump(float jump)
@@ -102,6 +101,7 @@ public class PlayerBehaviour : MonoBehaviour
         Destroy(partcilesGO);
         if(score == "perfect")
         {
+            temp = Random.Range(0, particlesPrefab.Length);
             partcilesGO = Instantiate(particlesPrefab[temp], this.transform.position, Quaternion.identity);
             GameObject starObject = Instantiate(starEffect, this.transform.position, Quaternion.identity);
             GameObject textPerfectObject = Instantiate(textPerfect, this.transform.position, Quaternion.identity);

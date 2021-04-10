@@ -173,15 +173,17 @@ public class BackgroundBehaviour : MonoBehaviour
         }
         else
         {
-            time += Time.deltaTime;
-            if (time > LevelManager.instance.timingGood)
+            if (GameManager.GameStates == GameManager.GameState.InGame)
             {
-                time = 0;
-                --player.life;
-                player.AnimationScore("miss");
-                LevelManager.instance.addScore(LevelManager.instance.scoreMiss);
+                time += Time.deltaTime;
+                if (time > LevelManager.instance.timingGood)
+                {
+                    time = 0;
+                    --player.life;
+                    player.AnimationScore("miss");
+                    LevelManager.instance.addScore(LevelManager.instance.scoreMiss);
+                }
             }
-
         }
     }
 

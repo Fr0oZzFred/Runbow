@@ -5,7 +5,6 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource mainMenuTheme;
-    public AudioSource inGameTheme;
     public AudioSource goodGameOverSound;
     public AudioSource badGameOverSound;
     public AudioSource buttonSound;
@@ -13,6 +12,9 @@ public class SoundManager : MonoBehaviour
     public AudioSource perfectSound;
     public AudioSource goodSound;
     public AudioSource missSound;
+    public AudioSource runPlayer;
+    public AudioSource candy;
+    public AudioSource thunder;
     private static SoundManager _instance;
     public static SoundManager instance
     {
@@ -39,27 +41,17 @@ public class SoundManager : MonoBehaviour
     
     public void PlayMainMenuTheme()
     {
-        inGameTheme.Stop();
         badGameOverSound.Stop();
         goodGameOverSound.Stop();
         mainMenuTheme.Play();
     }
-    public void PlayInGameTheme()
-    {
-        mainMenuTheme.Stop();
-        badGameOverSound.Stop();
-        goodGameOverSound.Stop();
-        inGameTheme.Play();
-    }
 
     public void PlayBadGameOverTheme()
     {
-        inGameTheme.Stop();
         badGameOverSound.Play();
     }
     public void PlayGoodGameOverTheme()
     {
-        inGameTheme.Stop();
         goodGameOverSound.Play();
     }
 }

@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour
     public int level;
     public int numberOfColor;
     public bool levelDone = false;
+    public AudioSource inGameTheme;
 
     private static LevelManager _instance;
     public static LevelManager instance
@@ -32,6 +33,10 @@ public class LevelManager : MonoBehaviour
     {
         _instance = this;
         addScore(0);
+        SoundManager.instance.mainMenuTheme.Stop();
+        SoundManager.instance.badGameOverSound.Stop();
+        SoundManager.instance.goodGameOverSound.Stop();
+        inGameTheme.Play();
     }
 
     private void Update()

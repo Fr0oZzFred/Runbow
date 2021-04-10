@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int candy = 0;
+    public int candyPerLevel = 0;
     public int totalLevel = 5;
     public int totalLevelDone = 0;
     public int numberOfTails = 0;
@@ -79,17 +80,26 @@ public class GameManager : MonoBehaviour
     {
         candy += amount;
         UIManager.instance.DisplayCandy();
+        candyPerLevel += amount;
     }
 
     public void ChangeGameState(GameState GS)
     {
+        bool pauseFix = false;
+        if(_gameState == GameState.Pause)
+        {
+            pauseFix = true;
+        }
         _gameState = GS;
         switch (_gameState)
         {
             case GameState.MainMenu:
                 Time.timeScale = 1;
                 UIManager.instance.SetMainMenuActive();
-                SoundManager.instance.PlayMainMenuTheme();
+                if(!SoundManager.instance.mainMenuTheme.isPlaying)
+                {
+                    SoundManager.instance.PlayMainMenuTheme();
+                }
                 break;
             case GameState.ChoixPers:
                 Time.timeScale = 0;
@@ -106,24 +116,21 @@ public class GameManager : MonoBehaviour
             case GameState.InGame:
                 Time.timeScale = 1;
                 UIManager.instance.SetInGameHUDActive();
-                if(SoundManager.instance.inGameTheme.isPlaying)
+                if(pauseFix)
                 {
-                    SoundManager.instance.inGameTheme.UnPause();
-                }
-                else
-                {
-                    SoundManager.instance.PlayInGameTheme();
+                    LevelManager.instance.inGameTheme.UnPause();
                 }
                 break;
             case GameState.Pause:
                 Time.timeScale = 0;
                 UIManager.instance.SetPauseMenu();
-                SoundManager.instance.inGameTheme.Pause();
+                LevelManager.instance.inGameTheme.Pause();
                 break;
             case GameState.Death:
                 LevelManager.instance.speedBackground = 0;
                 LevelManager.instance.speedPlatform = 0;
                 UIManager.instance.SetGameOverMenuActive();
+                LevelManager.instance.inGameTheme.Stop();
                 UpgradeTail();
                 break;
         }

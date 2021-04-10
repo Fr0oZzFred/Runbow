@@ -25,7 +25,7 @@ public class ParticlesBehaviour : MonoBehaviour
     {
         Move();
         time -= Time.deltaTime;
-        if(time < 0)
+        if(time < 0 || GameManager.GameStates == GameManager.GameState.Death || GameManager.GameStates == GameManager.GameState.Pause)
         {
             Destroy(this.gameObject);
         }

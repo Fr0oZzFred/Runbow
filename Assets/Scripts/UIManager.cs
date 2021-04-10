@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     public GameObject candyUI;
     public Text textScore;
     public Text textCandy;
+    public Text textLevel;
     public GameObject[] levelButton;
     private static UIManager _instance;
     public static UIManager instance
@@ -37,6 +38,7 @@ public class UIManager : MonoBehaviour
     public void DisplayScore()
     {
         textScore.text = "Score : " + LevelManager.instance.score;
+        textLevel.text = "Level : " + LevelManager.instance.level;
     }
 
     public void DisplayCandy()
@@ -147,6 +149,8 @@ public class UIManager : MonoBehaviour
             stars[1].SetActive(false);
             stars[2].SetActive(false);
             nextLevel.SetActive(false);
+            GameManager.instance.addCandy(GameManager.instance.candyPerLevel * -1);
+            GameManager.instance.candyPerLevel = 0;
         }
     }
     

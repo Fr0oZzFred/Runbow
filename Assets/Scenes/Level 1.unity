@@ -1374,6 +1374,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4414068756203525161, guid: eac43d83f3457c74ab409ac98dd53b29,
         type: 3}
+      propertyPath: inGameTheme
+      value: 
+      objectReference: {fileID: 1005608738}
+    - target: {fileID: 4414068756203525161, guid: eac43d83f3457c74ab409ac98dd53b29,
+        type: 3}
       propertyPath: numberOfColor
       value: 2
       objectReference: {fileID: 0}
@@ -1392,8 +1397,19 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5332684208582924955, guid: eac43d83f3457c74ab409ac98dd53b29,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0cbc36f3b144fcf49be9843966bda61e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac43d83f3457c74ab409ac98dd53b29, type: 3}
+--- !u!82 &1005608738 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5332684208582924955, guid: eac43d83f3457c74ab409ac98dd53b29,
+    type: 3}
+  m_PrefabInstance: {fileID: 1005608737}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1052163794
 PrefabInstance:
   m_ObjectHideFlags: 0

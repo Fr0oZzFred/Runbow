@@ -28,6 +28,7 @@ public class CollectiblesBehaviour : MonoBehaviour
         {
             GameManager.instance.addCandy(score);
             player.CandyEffect();
+            SoundManager.instance.candy.Play();
             Destroy(this.gameObject);
         }
     }

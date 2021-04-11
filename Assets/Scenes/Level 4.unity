@@ -1819,6 +1819,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4414068756203525161, guid: eac43d83f3457c74ab409ac98dd53b29,
         type: 3}
+      propertyPath: timingGood
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414068756203525161, guid: eac43d83f3457c74ab409ac98dd53b29,
+        type: 3}
       propertyPath: inGameTheme
       value: 
       objectReference: {fileID: 1182684116}
@@ -1841,7 +1846,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 7aa527e11d0db254ba43b01fb86d72c0, type: 3}
+      objectReference: {fileID: 8300000, guid: 0ee6ebf7afe3e6c48be133cbcb8d4d61, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac43d83f3457c74ab409ac98dd53b29, type: 3}
 --- !u!82 &1182684116 stripped

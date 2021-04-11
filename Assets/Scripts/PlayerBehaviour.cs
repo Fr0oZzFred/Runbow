@@ -89,6 +89,10 @@ public class PlayerBehaviour : MonoBehaviour
         {
             tails.ChangeTail(number);
         }
+        else if (number>=tails.sprite.Length)
+        {
+            tails.ChangeTail(tails.sprite.Length-1);
+        }
     }
 
     public void CandyEffect()
@@ -133,10 +137,12 @@ public class PlayerBehaviour : MonoBehaviour
         {
             if (GameManager.GameStates == GameManager.GameState.Pause)
             {
+                SoundManager.instance.PlayButtonClip();
                 GameManager.instance.ChangeGameState(GameManager.GameState.InGame);
             }
             else
             {
+                SoundManager.instance.PlayBackButtonClip();
                 GameManager.instance.ChangeGameState(GameManager.GameState.Pause);
             }
         }

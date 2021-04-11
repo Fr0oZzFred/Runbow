@@ -221,7 +221,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0032110214, y: 0}
+  m_Offset: {x: -0.04343462, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -232,7 +232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.8959866, y: 10.8}
+  m_Size: {x: 7.8026953, y: 10.8}
   m_EdgeRadius: 0
 --- !u!1001 &12580519
 PrefabInstance:
@@ -1238,7 +1238,12 @@ PrefabInstance:
     - target: {fileID: 602942808215602153, guid: 5116040eee3faa34d8c46d41ee85939c,
         type: 3}
       propertyPath: m_Size.x
-      value: 6
+      value: 5.8134193
+      objectReference: {fileID: 0}
+    - target: {fileID: 602942808215602153, guid: 5116040eee3faa34d8c46d41ee85939c,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.09329033
       objectReference: {fileID: 0}
     - target: {fileID: 602942808215602153, guid: 5116040eee3faa34d8c46d41ee85939c,
         type: 3}
@@ -2607,12 +2612,12 @@ PrefabInstance:
     - target: {fileID: 1668987366577699487, guid: b1296a35183475145b9217af2020b5ef,
         type: 3}
       propertyPath: m_Size.x
-      value: 3.8799706
+      value: 4.043228
       objectReference: {fileID: 0}
     - target: {fileID: 1668987366577699487, guid: b1296a35183475145b9217af2020b5ef,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.09398842
+      value: 0.012359619
       objectReference: {fileID: 0}
     - target: {fileID: 1668987366577699487, guid: b1296a35183475145b9217af2020b5ef,
         type: 3}
@@ -5898,6 +5903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4414068756203525161, guid: eac43d83f3457c74ab409ac98dd53b29,
         type: 3}
+      propertyPath: timingGood
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414068756203525161, guid: eac43d83f3457c74ab409ac98dd53b29,
+        type: 3}
       propertyPath: inGameTheme
       value: 
       objectReference: {fileID: 2102509263}
@@ -5915,7 +5925,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 7aa527e11d0db254ba43b01fb86d72c0, type: 3}
+      objectReference: {fileID: 8300000, guid: 6a825f1f0cd11b74980a785aaf24bb54, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac43d83f3457c74ab409ac98dd53b29, type: 3}
 --- !u!82 &2102509263 stripped

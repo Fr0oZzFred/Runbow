@@ -138,9 +138,9 @@ public class GameManager : MonoBehaviour
 
     void UpgradeTail()
     {
-        if (LevelManager.instance.levelDone && !level[LevelManager.instance.level])
+        if (LevelManager.instance.levelDone && !level[LevelManager.instance.level-1])
         {
-            level[LevelManager.instance.level] = true;
+            level[LevelManager.instance.level-1] = true;
             totalLevelDone++;
             if (totalLevelDone >= tailsCondition[index])
             {

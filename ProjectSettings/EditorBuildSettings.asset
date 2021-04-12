@@ -53,7 +53,31 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Level 15.unity
     guid: e2ff8408b6f11904994cebadb14d1223
+  - enabled: 0
+    path: Assets/Scenes/Level 16.unity
+    guid: b63b4b87f73581f44a9f3dc62f9002f3
+  - enabled: 0
+    path: Assets/Scenes/Level 17.unity
+    guid: c1c2f8c52443dbc4ea74e52caad5a176
+  - enabled: 0
+    path: Assets/Scenes/Level 18.unity
+    guid: 97ab2162a2a2d5b4ea3c6ea86620806a
+  - enabled: 0
+    path: Assets/Scenes/Level 19.unity
+    guid: e4b3ef5a2cc53174b9184652ec8f84ee
+  - enabled: 0
+    path: Assets/Scenes/Level 20.unity
+    guid: 8c80bae6b66aa5e4eb5292dd4c4cb460
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 9a3dcf9b72ca6884ca4d311ffe694278
+  - enabled: 0
+    path: Assets/Scenes/Level Licorne.unity
+    guid: 186795db2f79d3047b9dea6c92dbd7e7
+  - enabled: 0
+    path: Assets/Scenes/Level Pegasus.unity
+    guid: 9bf5c601f9e536c4ea993081cc05ac4c
+  - enabled: 0
+    path: Assets/Scenes/Level BluePegasus.unity
+    guid: 124ffca5df4f93442a2493561cdf84b7
   m_configObjects: {}

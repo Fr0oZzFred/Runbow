@@ -428,6 +428,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2038067966}
     m_Modifications:
+    - target: {fileID: 4644956255283639474, guid: bbaa14a1e7ea189468c6f0e60aae6c65,
+        type: 3}
+      propertyPath: thunder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5760098769312151516, guid: bbaa14a1e7ea189468c6f0e60aae6c65,
         type: 3}
       propertyPath: m_Name
@@ -962,6 +967,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1244741130}
     m_Modifications:
+    - target: {fileID: 570678134998746191, guid: aae2127603c291f4fb9ac1dc396afb4c,
+        type: 3}
+      propertyPath: Flash
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1780206528463157080, guid: aae2127603c291f4fb9ac1dc396afb4c,
         type: 3}
       propertyPath: m_Name
@@ -981,6 +991,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 11.9721365
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880446937861103712, guid: aae2127603c291f4fb9ac1dc396afb4c,
+        type: 3}
+      propertyPath: thunder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8083237041617831611, guid: aae2127603c291f4fb9ac1dc396afb4c,
         type: 3}
@@ -1417,6 +1432,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1244741130}
     m_Modifications:
+    - target: {fileID: 570678134998746191, guid: aae2127603c291f4fb9ac1dc396afb4c,
+        type: 3}
+      propertyPath: Flash
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1780206528463157080, guid: aae2127603c291f4fb9ac1dc396afb4c,
         type: 3}
       propertyPath: m_Name

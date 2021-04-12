@@ -16,10 +16,9 @@ public class ThunderBoxBehaviour : MonoBehaviour
     [SerializeField]
     Animator eclair;
 
-    private void Awake()
+    private void Start()
     {
-        backgroundObject = @object.GetComponent<BackgroundBehaviour>();
-        if (backgroundObject)
+        if (background)
         {
             backgroundObject = @object.GetComponent<BackgroundBehaviour>();
         }
@@ -38,6 +37,7 @@ public class ThunderBoxBehaviour : MonoBehaviour
             {
                 backgroundObject.ChangeBKColorState((BackgroundBehaviour.BackGroundColorState)backgroundObject.RandomBK());
                 eclair.SetTrigger("Trigger");
+                SoundManager.instance.thunder.Play();
                 Flash.SetActive(true);
                 flash = true;
             }
@@ -45,12 +45,17 @@ public class ThunderBoxBehaviour : MonoBehaviour
             {
                 backgroundObject.ChangeBKColorState((BackgroundBehaviour.BackGroundColorState)color);
                 eclair.SetTrigger("Trigger");
+                SoundManager.instance.thunder.Play();
                 Flash.SetActive(true);
                 flash = true;
             }
         }
         else if(player != null)
         {
+            eclair.SetTrigger("Trigger");
+            SoundManager.instance.thunder.Play();
+            Flash.SetActive(true);
+            flash = true;
             platform.ChangePlatformState((Platform.PlatformState)platformType);
         }
     }

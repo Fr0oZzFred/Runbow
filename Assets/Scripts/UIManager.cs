@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     public Text textCandy;
     public Text textLevel;
     public GameObject[] levelButton;
+    public GameObject levelSelectionButton;
     private static UIManager _instance;
     public static UIManager instance
     {
@@ -163,6 +164,10 @@ public class UIManager : MonoBehaviour
         if (levelButton.Length >= GameManager.instance.totalLevelDone+1)
         {
             levelButton[GameManager.instance.totalLevelDone].SetActive(true);
+        }
+        if(GameManager.instance.totalLevelDone >= GameManager.instance.totalLevel *0.5)
+        {
+            levelSelectionButton.SetActive(true);
         }
     }
 }

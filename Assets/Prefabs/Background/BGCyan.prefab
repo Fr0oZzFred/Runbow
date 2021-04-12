@@ -1,5 +1,82 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2214497973704790417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7053717789628141135}
+  - component: {fileID: 6416782766524959940}
+  - component: {fileID: 5204666646398737923}
+  m_Layer: 0
+  m_Name: ThunderBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7053717789628141135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2214497973704790417}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8502265361152965244}
+  m_Father: {fileID: 5391163164671969682}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &6416782766524959940
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2214497973704790417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 21}
+  m_EdgeRadius: 0
+--- !u!114 &5204666646398737923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2214497973704790417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537be1946eb79444482e18517a312efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: 1
+  color: 3
+  platformType: 0
+  object: {fileID: 2470434888796878961}
+  Flash: {fileID: 0}
+  eclair: {fileID: 4295901547492982835}
 --- !u!1 &2470434888796878961
 GameObject:
   m_ObjectHideFlags: 0
@@ -30,7 +107,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5980003519015978844}
+  - {fileID: 7053717789628141135}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   random: 0
   thunder: 0
-  thunderBox: {fileID: 8636571446240323125}
+  thunderBox: {fileID: 2214497973704790417}
   color: 7
   backgroundColor:
   - {fileID: 21300000, guid: 98138bc855acb8b41a65f45018c453d8, type: 3}
@@ -135,79 +212,84 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.2, y: 10.8}
   m_EdgeRadius: 0
---- !u!1 &8636571446240323125
-GameObject:
+--- !u!1001 &819539225202786687
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5980003519015978844}
-  - component: {fileID: 383583425255064018}
-  - component: {fileID: 4402087954621025126}
-  m_Layer: 0
-  m_Name: ThunderBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &5980003519015978844
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8636571446240323125}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5391163164671969682}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &383583425255064018
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8636571446240323125}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 21}
-  m_EdgeRadius: 0
---- !u!114 &4402087954621025126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_Modification:
+    m_TransformParent: {fileID: 7053717789628141135}
+    m_Modifications:
+    - target: {fileID: 9070734457874683405, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Eclair
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.4700003
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24089377e9ed43f4cad09ff8919d65d4, type: 3}
+--- !u!4 &8502265361152965244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9124728087376263939, guid: 24089377e9ed43f4cad09ff8919d65d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 819539225202786687}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8636571446240323125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537be1946eb79444482e18517a312efa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  background: 1
-  color: 0
-  platformType: 0
-  object: {fileID: 2470434888796878961}
-  Flash: {fileID: 0}
-  eclair: {fileID: 0}
+--- !u!95 &4295901547492982835 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3513244383739167052, guid: 24089377e9ed43f4cad09ff8919d65d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 819539225202786687}
+  m_PrefabAsset: {fileID: 0}

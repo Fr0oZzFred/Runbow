@@ -127,6 +127,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (transform.position.y < -4 || transform.position.y > 8 || transform.position.x < -5 || life < 0)
         {
+            SoundManager.instance.missSound.Play();
             GameManager.instance.ChangeGameState(GameManager.GameState.Death);
             this.enabled = false;
         }

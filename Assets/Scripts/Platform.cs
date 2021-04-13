@@ -58,6 +58,7 @@ public class Platform : MonoBehaviour
         {
             if(PlatformStates == PlatformState.Pics)
             {
+                SoundManager.instance.missSound.Play();
                 GameManager.instance.ChangeGameState(GameManager.GameState.Death);
                 player.ChangeMoveState(PlayerBehaviour.MoveState.Death);
             }

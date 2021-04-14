@@ -40,12 +40,25 @@ public class ScenesManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        if(LevelManager.instance != null)
+        {
+            if (!LevelManager.instance.levelDone)
+            {
+                GameManager.instance.addCandy(GameManager.instance.candyPerLevel * -1);
+                GameManager.instance.candyPerLevel = 0;
+            }
+        }
         SceneManager.LoadScene("MainMenu");
         GameManager.instance.ChangeGameState(GameManager.GameState.MainMenu);
     }
 
     public void Reload()
     {
+        if(!LevelManager.instance.levelDone)
+        {
+            GameManager.instance.addCandy(GameManager.instance.candyPerLevel * -1);
+            GameManager.instance.candyPerLevel = 0;
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameManager.instance.ChangeGameState(GameManager.GameState.InGame);
     }

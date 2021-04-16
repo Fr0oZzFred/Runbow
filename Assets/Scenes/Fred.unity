@@ -423,7 +423,7 @@ PrefabInstance:
         type: 3}
       propertyPath: thunderBox
       value: 
-      objectReference: {fileID: 1615083249}
+      objectReference: {fileID: 0}
     - target: {fileID: 5376965899949838608, guid: bbaa14a1e7ea189468c6f0e60aae6c65,
         type: 3}
       propertyPath: m_Size.y
@@ -1728,12 +1728,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbaa14a1e7ea189468c6f0e60aae6c65, type: 3}
---- !u!1 &1615083249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5740044764130716267, guid: bbaa14a1e7ea189468c6f0e60aae6c65,
-    type: 3}
-  m_PrefabInstance: {fileID: 397076689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1673541405
 PrefabInstance:
   m_ObjectHideFlags: 0

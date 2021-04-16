@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: 7698aae5939547241abe0cf901297615
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5622665510178330689
+    second: nuages_chiffres_0
+  - first:
+      213: -8142222987572660331
+    second: nuages_chiffres_1
+  - first:
+      213: -7998301677259160056
+    second: nuages_chiffres_2
+  - first:
+      213: 5868930666371396084
+    second: nuages_chiffres_3
+  - first:
+      213: -5555706170956364299
+    second: nuages_chiffres_4
+  - first:
+      213: 4440067288432946939
+    second: nuages_chiffres_5
+  - first:
+      213: 3179972944163787154
+    second: nuages_chiffres_6
+  - first:
+      213: 5640432074464636000
+    second: nuages_chiffres_7
+  - first:
+      213: -4304862721658963678
+    second: nuages_chiffres_8
+  - first:
+      213: 6926845566129453160
+    second: nuages_chiffres_9
+  - first:
+      213: -7571719051235936269
+    second: nuages_chiffres_10
+  - first:
+      213: 8379329248385756836
+    second: nuages_chiffres_11
+  - first:
+      213: -4336546123328818021
+    second: nuages_chiffres_12
+  - first:
+      213: -9012646603409122448
+    second: nuages_chiffres_13
+  - first:
+      213: -3028198023673617776
+    second: nuages_chiffres_14
+  - first:
+      213: -8112457863935946686
+    second: nuages_chiffres_15
+  - first:
+      213: 6269993132805291374
+    second: nuages_chiffres_16
+  - first:
+      213: -5319720802239597304
+    second: nuages_chiffres_17
+  - first:
+      213: 2562839423392101288
+    second: nuages_chiffres_18
+  - first:
+      213: 8299098447820669328
+    second: nuages_chiffres_19
+  - first:
+      213: -703857941309046026
+    second: nuages_chiffres_20
+  - first:
+      213: -2607918588273811928
+    second: nuages_chiffres_21
+  - first:
+      213: -3980769438101848666
+    second: nuages_chiffres_22
+  - first:
+      213: 4377890384174997190
+    second: nuages_chiffres_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nuages_chiffres_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1481509cd78b70e40800000000000000
+      internalID: 5622665510178330689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 600
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59736b70553010f80800000000000000
+      internalID: -8142222987572660331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_2
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 600
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8068e885003500190800000000000000
+      internalID: -7998301677259160056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_3
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 600
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1b67c9851a27150800000000000000
+      internalID: 5868930666371396084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f543b34caa26e2b0800000000000000
+      internalID: -5555706170956364299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 492
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfea0e1aca94e9d30800000000000000
+      internalID: 4440067288432946939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_6
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 492
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2915c346b88812c20800000000000000
+      internalID: 3179972944163787154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_7
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 492
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c2f226617d64e40800000000000000
+      internalID: 5640432074464636000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 376
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22932bca92e0244c0800000000000000
+      internalID: -4304862721658963678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_9
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 380
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868b227a759112060800000000000000
+      internalID: 6926845566129453160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_10
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 383
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7360cb3a9dbe690800000000000000
+      internalID: -7571719051235936269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 382
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aee21a4e8b594470800000000000000
+      internalID: 8379329248385756836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 149
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9473eed64e71d3c0800000000000000
+      internalID: -4336546123328818021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b1bad4aa5ace280800000000000000
+      internalID: -9012646603409122448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_14
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 256
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092e46901fda9f5d0800000000000000
+      internalID: -3028198023673617776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_15
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 256
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24016cced82ca6f80800000000000000
+      internalID: -8112457863935946686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d7ff0d88d730750800000000000000
+      internalID: 6269993132805291374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 124
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805b04e8d1e8c26b0800000000000000
+      internalID: -5319720802239597304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_18
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 125
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a337a780e8019320800000000000000
+      internalID: 2562839423392101288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_19
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 119
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091c85a51125c2370800000000000000
+      internalID: 8299098447820669328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2cfeb7ee46b36f0800000000000000
+      internalID: -703857941309046026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_21
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 10
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e1dce7cdfcecbd0800000000000000
+      internalID: -2607918588273811928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_22
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 13
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad353d794771c8c0800000000000000
+      internalID: -3980769438101848666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_chiffres_23
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 12
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce595efb1461cc30800000000000000
+      internalID: 4377890384174997190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

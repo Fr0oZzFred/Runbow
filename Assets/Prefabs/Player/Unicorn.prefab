@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5212161958759516217}
   - component: {fileID: 7238347468599415019}
   - component: {fileID: 8686777630648424083}
+  - component: {fileID: 341044535}
   m_Layer: 0
   m_Name: Tails
   m_TagString: Untagged
@@ -105,6 +106,25 @@ MonoBehaviour:
   - {fileID: 21300000, guid: df99f907591b97a498f5c954dab4ffb7, type: 3}
   - {fileID: 21300000, guid: 158b191d90210eb45bf322811a921943, type: 3}
   - {fileID: 21300000, guid: 5e5d2855d086a6c43913389f39277fbb, type: 3}
+--- !u!95 &341044535
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115195185607571577}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f732739e09e4c544ebccb6bc8e8160df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5077575371301220413
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,6 +138,7 @@ GameObject:
   - component: {fileID: 5077575371301220401}
   - component: {fileID: 5077575371301220400}
   - component: {fileID: 5077575371301220415}
+  - component: {fileID: 341044533}
   m_Layer: 0
   m_Name: Unicorn
   m_TagString: Untagged
@@ -277,3 +298,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &341044533
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077575371301220413}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2f847fa06ca7aa54f823a775c39dc313, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

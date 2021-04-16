@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 9a8084e61d2c0b44ca00e3cdd354760e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4316048278249421861
+    second: nuages_bleues_a_rendres_0
+  - first:
+      213: -1012514468875343349
+    second: nuages_bleues_a_rendres_1
+  - first:
+      213: 5517350597688955944
+    second: nuages_bleues_a_rendres_2
+  - first:
+      213: -4401764156008175182
+    second: nuages_bleues_a_rendres_3
+  - first:
+      213: -422943807483341688
+    second: nuages_bleues_a_rendres_4
+  - first:
+      213: 3636895506017040291
+    second: nuages_bleues_a_rendres_5
+  - first:
+      213: 6558610444597990291
+    second: nuages_bleues_a_rendres_6
+  - first:
+      213: -6796861130107394324
+    second: nuages_bleues_a_rendres_7
+  - first:
+      213: 7343961007661322756
+    second: nuages_bleues_a_rendres_8
+  - first:
+      213: 2269655223239608402
+    second: nuages_bleues_a_rendres_9
+  - first:
+      213: 6732351144326965606
+    second: nuages_bleues_a_rendres_10
+  - first:
+      213: 4486243052044159645
+    second: nuages_bleues_a_rendres_11
+  - first:
+      213: 7380311764536779033
+    second: nuages_bleues_a_rendres_12
+  - first:
+      213: 1649077306621452759
+    second: nuages_bleues_a_rendres_13
+  - first:
+      213: 7800267633862561016
+    second: nuages_bleues_a_rendres_14
+  - first:
+      213: 7909976434087323008
+    second: nuages_bleues_a_rendres_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3c18555f05a14c0800000000000000
+      internalID: -4316048278249421861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 350
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aedb08473d2f1f0800000000000000
+      internalID: -1012514468875343349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_2
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 350
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8241a8ce221919c40800000000000000
+      internalID: 5517350597688955944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_3
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 350
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9e51852dac9e2c0800000000000000
+      internalID: -4401764156008175182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884110319d6612af0800000000000000
+      internalID: -422943807483341688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 234
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a73c519139d87230800000000000000
+      internalID: 3636895506017040291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_6
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 234
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3931e6a437dd40b50800000000000000
+      internalID: 6558610444597990291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_7
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 234
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6e94040d2bca1a0800000000000000
+      internalID: -6796861130107394324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40219f160adfae560800000000000000
+      internalID: 7343961007661322756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_9
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 127
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2588ecf766f6f7f10800000000000000
+      internalID: 2269655223239608402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_10
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 127
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669adcc32bd1e6d50800000000000000
+      internalID: 6732351144326965606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_11
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 127
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a08256946524e30800000000000000
+      internalID: 4486243052044159645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911e9d082722c6660800000000000000
+      internalID: 7380311764536779033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_13
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 12
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1645cb213b2e610800000000000000
+      internalID: 1649077306621452759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_14
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 12
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcca5dd51e104c60800000000000000
+      internalID: 7800267633862561016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_bleues_a_rendres_15
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 12
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0856c7f68a1e5cd60800000000000000
+      internalID: 7909976434087323008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -1395007644600020601}
   - component: {fileID: 492864054003925935}
   - component: {fileID: -3789770689370239380}
+  - component: {fileID: 1451518629}
   m_Layer: 0
   m_Name: BluePegasus
   m_TagString: Untagged
@@ -172,6 +173,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1451518629
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5138578581019581662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 34151c3e29e85ee4ab130ccf9ee611f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7997893923128691934
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +203,7 @@ GameObject:
   - component: {fileID: 8444902954125807247}
   - component: {fileID: 8710242410167561516}
   - component: {fileID: 6544426536036458529}
+  - component: {fileID: 1451518630}
   m_Layer: 0
   m_Name: Tails
   m_TagString: Untagged
@@ -278,3 +299,22 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7d710fd10eb61d94ca885bd2add623b7, type: 3}
   - {fileID: 21300000, guid: 3508ea4a5eeb30c45af15c09739dbf7f, type: 3}
   - {fileID: 21300000, guid: 9d1656b535766684ab1c09d0c11486f9, type: 3}
+--- !u!95 &1451518630
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7997893923128691934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47c7f07d111d920408fc31809114db71, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

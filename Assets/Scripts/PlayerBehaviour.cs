@@ -23,6 +23,7 @@ public class PlayerBehaviour : MonoBehaviour
     float input4 = 0;
     int temp;
     Rigidbody2D rigidbody2d;
+    Animator animator;
     public enum MoveState
     {
         Jump,
@@ -63,6 +64,7 @@ public class PlayerBehaviour : MonoBehaviour
         this.enabled = true;
         spriteRenderer = GetComponent<SpriteRenderer>();
         tails = tailsGO.GetComponent<TailsBehaviour>();
+        animator = GetComponent<Animator>();
         UpgradeTail(GameManager.instance.numberOfTails);
     }
 
@@ -127,6 +129,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (transform.position.y < -4 || transform.position.y > 8 || transform.position.x < -5 || life < 0)
         {
+            animator.SetBool("Idle", true);
             SoundManager.instance.missSound.Play();
             GameManager.instance.ChangeGameState(GameManager.GameState.Death);
             this.enabled = false;
@@ -160,7 +163,13 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ChangeSprite(int colorInt)
     {
-        spriteRenderer.sprite = playerSkins[colorInt];
+        animator.SetInteger("Color",colorInt);
+        //spriteRenderer.sprite = playerSkins[colorInt];
+    }
+
+    public void ChangeIdle()
+    {
+        animator.SetBool("Idle", true);
     }
 
     public void ChangeMoveState(MoveState state)
@@ -214,7 +223,7 @@ public class PlayerBehaviour : MonoBehaviour
             green += Input.GetAxis("Color 1") * 1;
             red += Input.GetAxis("Color 2") * 5;
             blue += Input.GetAxis("Color 3") * 10;
-            pink += Input.GetAxis("Color 4") * 15;
+            pink += Input.GetAxis("Color 4") * 16;
             float total = green + red + blue + pink;
             switch (total)
             {
@@ -227,10 +236,10 @@ public class PlayerBehaviour : MonoBehaviour
                 case 10:
                     ChangeColorState(ColorState.Blue);
                     break;
-                case 15:
+                case 16:
                     ChangeColorState(ColorState.Pink);
                     break;
-                case 25:
+                case 26:
                     ChangeColorState(ColorState.Purple);
                     break;
                 case 6:

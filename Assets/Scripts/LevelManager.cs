@@ -63,7 +63,11 @@ public class LevelManager : MonoBehaviour
         {
             if(player != null)
             {
-                levelDone = true;
+                player.ChangeIdle();
+                if(score >=firstStar)
+                {
+                    levelDone = true;
+                }
                 GameManager.instance.ChangeGameState(GameManager.GameState.Death);
             }
         }

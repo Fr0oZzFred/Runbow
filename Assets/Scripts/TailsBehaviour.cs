@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class TailsBehaviour : MonoBehaviour
 {
-    SpriteRenderer spriteRenderer;
+    public Animator animator;
+    public int nbTail;
+    //SpriteRenderer spriteRenderer;
     public Sprite[] sprite;
     void Awake()
     {
-        spriteRenderer = transform.GetComponent<SpriteRenderer>();
+        //spriteRenderer = transform.GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     public void ChangeTail(int numberTail)
     {
         if( sprite[numberTail] != null)
         {
-            spriteRenderer.sprite = sprite[numberTail];
+            //spriteRenderer.sprite = sprite[numberTail];
+            animator.SetInteger("NbColor", numberTail);
         }
     }
 }

@@ -15,7 +15,7 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject[] particlesPrefab;
     GameObject partcilesGO;
     TailsBehaviour tails;
-    SpriteRenderer spriteRenderer;
+    //SpriteRenderer spriteRenderer;
     public Sprite[] playerSkins;
     float input1 = 0;
     float input2 = 0;
@@ -62,7 +62,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
         this.enabled = true;
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
         tails = tailsGO.GetComponent<TailsBehaviour>();
         animator = GetComponent<Animator>();
         UpgradeTail(GameManager.instance.numberOfTails);
@@ -129,10 +129,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (transform.position.y < -4 || transform.position.y > 8 || transform.position.x < -5 || life < 0)
         {
-            animator.SetBool("Idle", true);
-            SoundManager.instance.missSound.Play();
-            GameManager.instance.ChangeGameState(GameManager.GameState.Death);
-            this.enabled = false;
+            ChangeMoveState(MoveState.Death);
         }
     }
     private void Pause()
@@ -170,6 +167,7 @@ public class PlayerBehaviour : MonoBehaviour
     public void ChangeIdle()
     {
         animator.SetBool("Idle", true);
+        tails.animator.SetBool("Idle", true);
     }
 
     public void ChangeMoveState(MoveState state)
@@ -178,12 +176,22 @@ public class PlayerBehaviour : MonoBehaviour
         switch (_moveStates)
         {
             case MoveState.Run:
+                animator.SetBool("Jump", false);
+                tails.animator.SetBool("Jump", false);
                 break;
             case MoveState.Jump:
+                tails.animator.SetBool("Jump", true);
+                animator.SetBool("Jump", true);
+                break;
+            case MoveState.Death:
+                tails.animator.SetBool("Death", true);
+                animator.SetBool("Death", true);
+                SoundManager.instance.missSound.Play();
+                GameManager.instance.ChangeGameState(GameManager.GameState.Death);
+                this.enabled = false;
                 break;
         }
     }
-
     void ChangeColorState(ColorState colorState)
     {
         _colorState = colorState;

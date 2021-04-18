@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: b4f73e654d673dc4aafa0686c28b3b35
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6913692161999617177
+    second: nuages_roses(1)_0
+  - first:
+      213: -1983520609088973250
+    second: nuages_roses(1)_1
+  - first:
+      213: -540909846204871492
+    second: nuages_roses(1)_2
+  - first:
+      213: -1212424392232967072
+    second: nuages_roses(1)_3
+  - first:
+      213: -3043401203662813489
+    second: nuages_roses(1)_4
+  - first:
+      213: 4418917630017905456
+    second: nuages_roses(1)_5
+  - first:
+      213: -3155698490319938262
+    second: nuages_roses(1)_6
+  - first:
+      213: 1591630649163918421
+    second: nuages_roses(1)_7
+  - first:
+      213: 1993530451598309227
+    second: nuages_roses(1)_8
+  - first:
+      213: -730105291913474410
+    second: nuages_roses(1)_9
+  - first:
+      213: -2510069934477717893
+    second: nuages_roses(1)_10
+  - first:
+      213: 4871465244337828159
+    second: nuages_roses(1)_11
+  - first:
+      213: 1553901804646135706
+    second: nuages_roses(1)_12
+  - first:
+      213: -6784668172195428006
+    second: nuages_roses(1)_13
+  - first:
+      213: -2428504804490151406
+    second: nuages_roses(1)_14
+  - first:
+      213: 3920382109748890038
+    second: nuages_roses(1)_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nuages_roses(1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7634c95eb91ad00a0800000000000000
+      internalID: -6913692161999617177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 368
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36d592e38e1974e0800000000000000
+      internalID: -1983520609088973250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_2
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 368
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc82795c5d4e78f0800000000000000
+      internalID: -540909846204871492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_3
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 369
+        width: 150
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0646fef507a9c2fe0800000000000000
+      internalID: -1212424392232967072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 257
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc68eaadabaa3c5d0800000000000000
+      internalID: -3043401203662813489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 256
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033adec0c26235d30800000000000000
+      internalID: 4418917630017905456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 256
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d5e3251f4b434d0800000000000000
+      internalID: -3155698490319938262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_7
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 257
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c2a0184ab961610800000000000000
+      internalID: 1591630649163918421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67f07032617aab10800000000000000
+      internalID: 1993530451598309227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e4dd2fa152ed5f0800000000000000
+      internalID: -730105291913474410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e411a81b07a2dd0800000000000000
+      internalID: -2510069934477717893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 145
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31fa6064dbea9340800000000000000
+      internalID: 4871465244337828159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9775c95571909510800000000000000
+      internalID: 1553901804646135706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_13
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 30
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59846d7e3408d1a0800000000000000
+      internalID: -6784668172195428006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_14
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 30
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21af8014fb73c4ed0800000000000000
+      internalID: -2428504804490151406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuages_roses(1)_15
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 31
+        width: 150
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9016bf1cef76630800000000000000
+      internalID: 3920382109748890038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

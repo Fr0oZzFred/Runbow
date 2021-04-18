@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 466d49733ca4d2741ba6943b526a1b96
+guid: b2d0e7f0ab5509946b42e357f0a38bff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5603484694132504008
-    second: menus_0
+      213: -5433526026469473407
+    second: great_job_0
   - first:
-      213: 128926944594302868
-    second: menus_1
+      213: -1714553742935981006
+    second: great_job_1
   - first:
-      213: -7813017989701997055
-    second: menus_2
+      213: -2281045360773646402
+    second: great_job_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menus_0
+      name: great_job_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 333.3333
+        y: 357
         width: 500
-        height: 166.66667
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,20 +110,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c53b1a04a393cd40800000000000000
-      internalID: 5603484694132504008
+      spriteID: 1838272fddc3894b0800000000000000
+      internalID: -5433526026469473407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menus_1
+      name: great_job_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 167.33333
+        y: 214
         width: 500
-        height: 166.66667
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 497158e7f5a0ac100800000000000000
-      internalID: 128926944594302868
+      spriteID: 2340cf3747ea438e0800000000000000
+      internalID: -1714553742935981006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: menus_2
+      name: great_job_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 1.3333282
+        y: 80
         width: 500
-        height: 166.66667
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10e63149885929390800000000000000
-      internalID: -7813017989701997055
+      spriteID: eb7b88274591850e0800000000000000
+      internalID: -2281045360773646402
       vertices: []
       indices: 
       edges: []

@@ -15,7 +15,7 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject[] particlesPrefab;
     GameObject partcilesGO;
     TailsBehaviour tails;
-    //SpriteRenderer spriteRenderer;
+    SpriteRenderer spriteRenderer;
     public Sprite[] playerSkins;
     float input1 = 0;
     float input2 = 0;
@@ -23,7 +23,7 @@ public class PlayerBehaviour : MonoBehaviour
     float input4 = 0;
     int temp;
     Rigidbody2D rigidbody2d;
-    Animator animator;
+    //Animator animator;
     public enum MoveState
     {
         Jump,
@@ -62,9 +62,9 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
         this.enabled = true;
-        //spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         tails = tailsGO.GetComponent<TailsBehaviour>();
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         UpgradeTail(GameManager.instance.numberOfTails);
     }
 
@@ -160,15 +160,15 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ChangeSprite(int colorInt)
     {
-        animator.SetInteger("Color",colorInt);
-        //spriteRenderer.sprite = playerSkins[colorInt];
+        //animator.SetInteger("Color",colorInt);
+        spriteRenderer.sprite = playerSkins[colorInt];
     }
 
-    public void ChangeIdle()
+    /*public void ChangeIdle()
     {
         animator.SetBool("Idle", true);
         tails.animator.SetBool("Idle", true);
-    }
+    }*/
 
     public void ChangeMoveState(MoveState state)
     {
@@ -176,16 +176,16 @@ public class PlayerBehaviour : MonoBehaviour
         switch (_moveStates)
         {
             case MoveState.Run:
-                animator.SetBool("Jump", false);
-                tails.animator.SetBool("Jump", false);
+                /*animator.SetBool("Jump", false);
+                tails.animator.SetBool("Jump", false);*/
                 break;
             case MoveState.Jump:
-                tails.animator.SetBool("Jump", true);
-                animator.SetBool("Jump", true);
+                /*tails.animator.SetBool("Jump", true);
+                animator.SetBool("Jump", true);*/
                 break;
             case MoveState.Death:
-                tails.animator.SetBool("Death", true);
-                animator.SetBool("Death", true);
+                /*tails.animator.SetBool("Death", true);
+                animator.SetBool("Death", true);*/
                 SoundManager.instance.missSound.Play();
                 GameManager.instance.ChangeGameState(GameManager.GameState.Death);
                 this.enabled = false;

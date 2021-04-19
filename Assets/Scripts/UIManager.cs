@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     public GameObject candyUI;
     public Text textScore;
     public Text textCandy;
+    public Text textCandyMenu;
     public Text textLevel;
     public GameObject[] levelButton;
     public GameObject levelSelectionButton;
@@ -45,6 +46,7 @@ public class UIManager : MonoBehaviour
     public void DisplayCandy()
     {
         textCandy.text = "Candy : " + GameManager.instance.candy;
+        textCandyMenu.text = "Candy : " + GameManager.instance.candy;
     }
     public void SetMainMenuActive()
     {
@@ -124,6 +126,7 @@ public class UIManager : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             stars[2].SetActive(true);
             yield return new WaitForSeconds(1.0f);
+            GameManager.instance.candyPerLevel = 0;
         }
         else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.secondStar)
         {
@@ -134,6 +137,7 @@ public class UIManager : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             stars[1].SetActive(true);
             yield return new WaitForSeconds(1.0f);
+            GameManager.instance.candyPerLevel = 0;
         }
         else if(LevelManager.instance.levelDone && LevelManager.instance.score >= LevelManager.instance.firstStar)
         {
@@ -141,6 +145,7 @@ public class UIManager : MonoBehaviour
             gameOverGood.SetActive(true);
             stars[0].SetActive(true);
             nextLevel.SetActive(true);
+            GameManager.instance.candyPerLevel = 0;
         }
         else
         {
@@ -168,6 +173,27 @@ public class UIManager : MonoBehaviour
         if(GameManager.instance.totalLevelDone >= GameManager.instance.totalLevel *0.5)
         {
             levelSelectionButton.SetActive(true);
+        }
+    }
+
+    public void UnlockCharacter(int nombreRequis)
+    {
+        if(GameManager.instance.candy >= nombreRequis)
+        {
+            GameObject button;
+            if(nombreRequis>500)
+            {
+                button = GameObject.Find("ButtonUnlockBluePegasus");
+                GameManager.instance.addCandy(nombreRequis * -1);
+                GameManager.instance.candyPerLevel = 0;
+            }
+            else
+            {
+                button = GameObject.Find("ButtonUnlockPegasus");
+                GameManager.instance.addCandy(nombreRequis * -1);
+                GameManager.instance.candyPerLevel = 0;
+            }
+            Destroy(button);
         }
     }
 }

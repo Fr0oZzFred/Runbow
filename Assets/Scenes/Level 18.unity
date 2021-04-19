@@ -6026,9 +6026,56 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
         type: 3}
-      propertyPath: backgroundColor.Array.size
+      propertyPath: color
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
+        type: 3}
+      propertyPath: backgroundColor.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
+        type: 3}
+      propertyPath: backgroundColor.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: d2f76addabc6e1143a7e9b4e32124e63,
+        type: 3}
+    - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
+        type: 3}
+      propertyPath: backgroundColor.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 03b143e9d7dd49442be10d26493f9a24,
+        type: 3}
+    - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
+        type: 3}
+      propertyPath: backgroundColor.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b609aa6614e5f14194575b33ca70c8d,
+        type: 3}
+    - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
+        type: 3}
+      propertyPath: backgroundColor.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4f46d533f0562a741808918256422ad5,
+        type: 3}
+    - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
+        type: 3}
+      propertyPath: backgroundColor.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: f50ffdcc7e3b6664bb32fbd9c63bab0c,
+        type: 3}
+    - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
+        type: 3}
+      propertyPath: backgroundColor.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 94b4f6ba6de558e438f6aa954b754c3b,
+        type: 3}
+    - target: {fileID: 2466565261301706265, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
+        type: 3}
+      propertyPath: backgroundColor.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2163a793437886f4f83481d3c7f4585b,
+        type: 3}
     - target: {fileID: 4560622458630785218, guid: 8ea0b2b2d844dd448b938fbc3be176fa,
         type: 3}
       propertyPath: m_RootOrder

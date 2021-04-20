@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
-{
+{   // Cedric : Choix personnages Frederic : le reste
     public GameObject mainMenu;
     public GameObject menuTuto;
     public GameObject choixPersonages;

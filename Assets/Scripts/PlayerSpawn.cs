@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerSpawn : MonoBehaviour
-{
+{   // Cedric
     public GameObject Licorne;
     public GameObject Pegase;
     public GameObject PegaseNoir;

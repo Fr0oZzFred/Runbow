@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CollectiblesBehaviour : MonoBehaviour
-{
+{   // Frederic
     public int score;
     void Update()
     {

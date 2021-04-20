@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
-{
+{   //Frederic
     public int score = 0;
     public int firstStar = 50;
     public int secondStar = 50;

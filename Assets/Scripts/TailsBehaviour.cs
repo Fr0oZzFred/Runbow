@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TailsBehaviour : MonoBehaviour
-{
+{   // Frederic
     public Animator animator;
     public int nbTail;
     SpriteRenderer spriteRenderer;

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class Platform : MonoBehaviour
-{
+{   // Cedric : animation boing Frederic : reste
     public bool thunder;
     public int platformType;
     public float disappearSpeed = 0.1f;

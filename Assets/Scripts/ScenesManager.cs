@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ScenesManager : MonoBehaviour
-{
+{   // Frederic
     private static ScenesManager _instance;
     public static ScenesManager instance
     {

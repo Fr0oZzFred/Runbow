@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using System.IO;
 
 public class ManagersBehaviour : MonoBehaviour
-{
+{   // Frederic
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);

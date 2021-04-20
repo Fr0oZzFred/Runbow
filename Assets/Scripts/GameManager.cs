@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
-{
+{   // Cedric : Choix personnage Frederic : le reste
     public int candy = 0;
     public int candyPerLevel = 0;
     public int totalLevel = 5;

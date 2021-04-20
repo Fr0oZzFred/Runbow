@@ -4,7 +4,7 @@ using UnityEngine;
 
 [System.Serializable]
 public class GameManagerData
-{
+{   // Frederic
     public int candy;
     public int totalLevelDone;
     public int numberOfTails;

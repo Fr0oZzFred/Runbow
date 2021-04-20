@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BackgroundBehaviour : MonoBehaviour
-{
+{   // Cedric : RamdomBK Frederic : le reste
     public bool random;
     public bool thunder;
     public GameObject thunderBox;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
-{
+{   // Frederic
     public AudioSource mainMenuTheme;
     public AudioSource goodGameOverSound;
     public AudioSource badGameOverSound;

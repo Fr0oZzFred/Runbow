@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MissGoodPerfectBehaviour : MonoBehaviour
-{
+{   // Frederic
     public int speed = 3;
     public int distance = 4;
     public float timer = 1;

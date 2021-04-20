@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ParticlesBehaviour : MonoBehaviour
-{
+{   // Frederic
     public bool star;
     public float speed = 2f;
     public float time = 5;

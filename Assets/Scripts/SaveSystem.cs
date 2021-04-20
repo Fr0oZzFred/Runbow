@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
-{
+{   // Frederic
     public static void SaveGameManager(GameManager gameManager)
     {
         string path = Application.persistentDataPath + "/GameManager.data";

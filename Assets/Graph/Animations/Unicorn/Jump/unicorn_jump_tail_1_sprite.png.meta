@@ -20,6 +20,24 @@ TextureImporter:
   - first:
       213: 8639147549682444036
     second: unicorn_jump_tail_red_sprite_5
+  - first:
+      213: 7275532576563954586
+    second: unicorn_jump_tail_1_sprite_0
+  - first:
+      213: 8571118973832520519
+    second: unicorn_jump_tail_1_sprite_3
+  - first:
+      213: 5696920760465887633
+    second: unicorn_jump_tail_1_sprite_0
+  - first:
+      213: 3455402724783036454
+    second: unicorn_jump_tail_1_sprite_3
+  - first:
+      213: -2766403558806242765
+    second: unicorn_jump_tail_1_sprite_0
+  - first:
+      213: -2672842708318986237
+    second: unicorn_jump_tail_1_sprite_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: unicorn_jump_tail_red_sprite_0
+      name: unicorn_jump_tail_1_sprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,20 +131,20 @@ TextureImporter:
         width: 960
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a7b97243a4216e70800000000000000
-      internalID: 9106600205133395881
+      spriteID: a9380e9b452e7f460800000000000000
+      internalID: 7275532576563954586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unicorn_jump_tail_red_sprite_1
+      name: unicorn_jump_tail_1_sprite_1
       rect:
         serializedVersion: 2
         x: 960
@@ -134,20 +152,20 @@ TextureImporter:
         width: 960
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4354e74a77d97e3a0800000000000000
-      internalID: -6636162388720728780
+      spriteID: 743e5e28b4bb2f670800000000000000
+      internalID: 8571118973832520519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unicorn_jump_tail_red_sprite_2
+      name: unicorn_jump_tail_1_sprite_2
       rect:
         serializedVersion: 2
         x: 1920
@@ -155,20 +173,20 @@ TextureImporter:
         width: 960
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c77f30d266f9300800000000000000
-      internalID: 261039646936890429
+      spriteID: 1911e118f378f0f40800000000000000
+      internalID: 5696920760465887633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unicorn_jump_tail_red_sprite_3
+      name: unicorn_jump_tail_1_sprite_3
       rect:
         serializedVersion: 2
         x: 2880
@@ -176,20 +194,20 @@ TextureImporter:
         width: 960
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ebb83b3118c20660800000000000000
-      internalID: 7350657518155643876
+      spriteID: 6281c9e787e04ff20800000000000000
+      internalID: 3455402724783036454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unicorn_jump_tail_red_sprite_4
+      name: unicorn_jump_tail_1_sprite_4
       rect:
         serializedVersion: 2
         x: 3840
@@ -197,20 +215,20 @@ TextureImporter:
         width: 960
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea68390a5a0402420800000000000000
-      internalID: 2603151664727951022
+      spriteID: 33a3afbce92cb99d0800000000000000
+      internalID: -2766403558806242765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unicorn_jump_tail_red_sprite_5
+      name: unicorn_jump_tail_1_sprite_5
       rect:
         serializedVersion: 2
         x: 4800
@@ -218,14 +236,14 @@ TextureImporter:
         width: 960
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 407220d9cea64e770800000000000000
-      internalID: 8639147549682444036
+      spriteID: 3006726d7b728ead0800000000000000
+      internalID: -2672842708318986237
       vertices: []
       indices: 
       edges: []

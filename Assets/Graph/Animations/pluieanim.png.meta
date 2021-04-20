@@ -110,10 +110,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2303.3333
+        width: 1880
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: pluieanim_1
       rect:
         serializedVersion: 2
-        x: 2303
+        x: 2570
         y: 0
-        width: 2303.3333
+        width: 1880
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: pluieanim_2
       rect:
         serializedVersion: 2
-        x: 4606
+        x: 4920
         y: 0
-        width: 2303.3333
+        width: 1880
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: pluieanim_3
       rect:
         serializedVersion: 2
-        x: 6909
+        x: 7200
         y: 0
-        width: 2303.3333
+        width: 1880
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: pluieanim_4
       rect:
         serializedVersion: 2
-        x: 9212
+        x: 9350
         y: 0
-        width: 2303.3333
+        width: 1880
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: pluieanim_5
       rect:
         serializedVersion: 2
-        x: 11515
+        x: 11940
         y: 0
-        width: 2303.3333
+        width: 1880
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

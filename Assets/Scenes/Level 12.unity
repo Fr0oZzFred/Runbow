@@ -2587,6 +2587,16 @@ PrefabInstance:
       propertyPath: jumpPower
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8470340378267110981, guid: 856a6c53993c47a468e2c593bd6aa9b8,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.8072688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470340378267110981, guid: 856a6c53993c47a468e2c593bd6aa9b8,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1522018
+      objectReference: {fileID: 0}
     - target: {fileID: 8470340378267111000, guid: 856a6c53993c47a468e2c593bd6aa9b8,
         type: 3}
       propertyPath: m_RootOrder

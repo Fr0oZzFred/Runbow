@@ -12,6 +12,8 @@ public class GameManagerData
     public int index;
     public int firstLaunch;
     public int premierTuto;
+    public int achatPegasus;
+    public int achatBluePegasus;
 
     public GameManagerData(GameManager gameManager)
     {
@@ -34,5 +36,7 @@ public class GameManagerData
         }
         index = gameManager.index;
         premierTuto = gameManager.premierTuto;
+        achatPegasus = gameManager.achatPegasus;
+        achatBluePegasus = gameManager.achatBluePegasus;
     }
 }

@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public bool choixLicorne = false;
     public bool choixPegase = false;
     public bool choixPegaseNoir = false;
+    public int achatPegasus = 0;
+    public int achatBluePegasus = 0;
     public enum GameState
     {
         MainMenu,
@@ -74,6 +76,8 @@ public class GameManager : MonoBehaviour
         }
         index = data.index;
         premierTuto = data.premierTuto;
+        achatPegasus = data.achatPegasus;
+        achatBluePegasus = data.achatBluePegasus;
         addCandy(0);
     }
     public void addCandy(int amount)

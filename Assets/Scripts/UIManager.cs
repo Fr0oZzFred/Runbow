@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     public GameObject[] stars;
     public GameObject starUI;
     public GameObject candyUI;
+    public GameObject buttonAchatPegasus;
+    public GameObject buttonAchatBluePegasus;
     public Text textScore;
     public Text textCandy;
     public Text textCandyMenu;
@@ -105,6 +107,14 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         choixPersonages.SetActive(true);
+        if(GameManager.instance.achatPegasus ==1)
+        {
+            buttonAchatPegasus.SetActive(false);
+        }
+        if (GameManager.instance.achatBluePegasus == 1)
+        {
+            buttonAchatBluePegasus.SetActive(false);
+        }
     }
 
     IEnumerator ShowStars()
@@ -175,25 +185,25 @@ public class UIManager : MonoBehaviour
             levelSelectionButton.SetActive(true);
         }
     }
-
-    public void UnlockCharacter(int nombreRequis)
+    
+    public void UnlockPegasus(int nombreRequis)
     {
-        if(GameManager.instance.candy >= nombreRequis)
+        if (GameManager.instance.achatPegasus < 1)
         {
-            GameObject button;
-            if(nombreRequis>500)
-            {
-                button = GameObject.Find("ButtonUnlockBluePegasus");
-                GameManager.instance.addCandy(nombreRequis * -1);
-                GameManager.instance.candyPerLevel = 0;
-            }
-            else
-            {
-                button = GameObject.Find("ButtonUnlockPegasus");
-                GameManager.instance.addCandy(nombreRequis * -1);
-                GameManager.instance.candyPerLevel = 0;
-            }
-            Destroy(button);
+            GameManager.instance.addCandy(nombreRequis * -1);
+            GameManager.instance.candyPerLevel = 0;
+            GameManager.instance.achatPegasus = 1;
+            buttonAchatPegasus.SetActive(false);
+        }
+    }
+    public void UnlockbluePegasus(int nombreRequis)
+    {
+        if (GameManager.instance.achatBluePegasus < 1)
+        {
+            GameManager.instance.addCandy(nombreRequis * -1);
+            GameManager.instance.candyPerLevel = 0;
+            GameManager.instance.achatBluePegasus = 1;
+            buttonAchatBluePegasus.SetActive(false);
         }
     }
 }

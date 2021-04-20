@@ -161,7 +161,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ChangeSprite(int colorInt)
     {
-        if(passage)
+        if (passage)
         {
             tails.animator.SetBool("Run", true);
             passage = false;
@@ -172,6 +172,9 @@ public class PlayerBehaviour : MonoBehaviour
             passage = true;
         }
         animator.SetInteger("Color",colorInt);
+        AnimatorClipInfo[] tutu = this.animator.GetCurrentAnimatorClipInfo(0);
+        Debug.Log(tutu[0].clip.name);
+        Debug.Log(tutu[0].clip.length);
         //spriteRenderer.sprite = playerSkins[colorInt];
     }
 

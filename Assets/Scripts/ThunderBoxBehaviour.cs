@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ThunderBoxBehaviour : MonoBehaviour
 {
+    //Cédric : animation éclair+flash
+    //Fred : reste
     public bool background;
     public int color;
     public int platformType;

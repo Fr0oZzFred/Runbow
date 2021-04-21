@@ -379,6 +379,8 @@ MonoBehaviour:
   choixLicorne: 0
   choixPegase: 0
   choixPegaseNoir: 0
+  achatPegasus: 0
+  achatBluePegasus: 0
 --- !u!4 &594538912
 Transform:
   m_ObjectHideFlags: 0
@@ -542,6 +544,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Unicorn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238347468599415019, guid: 85d3003bc70d8c14b8d6fa012f0a0332,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7238347468599415019, guid: 85d3003bc70d8c14b8d6fa012f0a0332,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85d3003bc70d8c14b8d6fa012f0a0332, type: 3}

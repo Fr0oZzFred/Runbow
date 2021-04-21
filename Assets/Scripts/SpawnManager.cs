@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
-{
+{    //pas utilisé mais garder au cas où, Cedric
     private static SpawnManager _instance;
     public static SpawnManager instance
     {

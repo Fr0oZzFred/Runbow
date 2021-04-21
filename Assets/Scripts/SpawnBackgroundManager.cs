@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnBackgroundManager : MonoBehaviour
 {
+    //pas utilisé mais garder au cas où, Frederic
     public GameObject blue;
     public GameObject green;
     public GameObject red;

@@ -14852,7 +14852,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Flash
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1314281179}
     - target: {fileID: 2323800718177398130, guid: bbaa14a1e7ea189468c6f0e60aae6c65,
         type: 3}
       propertyPath: platformType

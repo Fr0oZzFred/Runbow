@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
-{   // Frederic
+{   //Frederic
     public float jumpPower = 7.0f;
     public int life = 2;
     public GameObject starEffect;

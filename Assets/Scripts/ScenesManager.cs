@@ -18,6 +18,10 @@ public class ScenesManager : MonoBehaviour
     {
         _instance = this;
     }
+    public void LoadCredit()
+    {
+        SceneManager.LoadScene("Crédit");
+    }
 
     public void LoadNextLevel()
     {
@@ -28,7 +32,7 @@ public class ScenesManager : MonoBehaviour
         }
         else
         {
-            LoadMainMenu();
+            LoadCredit();
         }
     }
 

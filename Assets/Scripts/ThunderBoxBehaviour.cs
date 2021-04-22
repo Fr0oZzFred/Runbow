@@ -13,7 +13,7 @@ public class ThunderBoxBehaviour : MonoBehaviour
     BackgroundBehaviour backgroundObject;
     Platform platform;
     public GameObject Flash;
-    int timer = 40;
+    int timer = 50;
     bool flash = false;
     [SerializeField]
     Animator eclair;

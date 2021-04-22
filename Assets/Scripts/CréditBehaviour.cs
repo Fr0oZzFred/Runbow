@@ -22,7 +22,7 @@ public class CréditBehaviour : MonoBehaviour
         {
             ScenesManager.instance.LoadMainMenu();
         }
-        if(time < -30)
+        if(time < -40)
         {
             ScenesManager.instance.LoadMainMenu();
         }

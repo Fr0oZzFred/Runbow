@@ -1594,7 +1594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   creditTheme: {fileID: 533970162}
-  time: 110
+  time: 80
 --- !u!82 &533970162
 AudioSource:
   m_ObjectHideFlags: 0

@@ -25,6 +25,7 @@ public class PlayerBehaviour : MonoBehaviour
     bool passage = true;
     Rigidbody2D rigidbody2d;
     Animator animator;
+    int colorFix;
     public enum MoveState
     {
         Jump,
@@ -161,33 +162,37 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ChangeSprite(int colorInt)
     {
-        if(this.MoveStates == MoveState.Jump)
+        if(colorFix != colorInt)
         {
-            if (passage)
+            if (this.MoveStates == MoveState.Jump)
             {
-                tails.animator.SetBool("JumpFix", false);
-                passage = false;
+                if (passage)
+                {
+                    tails.animator.SetBool("JumpFix", false);
+                    passage = false;
+                }
+                else
+                {
+                    tails.animator.SetBool("JumpFix", true);
+                    passage = true;
+                }
             }
             else
             {
-                tails.animator.SetBool("JumpFix", true);
-                passage = true;
-            }
-        }
-        else
-        {
-            if (passage)
-            {
-                tails.animator.SetBool("Run", false);
-                passage = false;
-            }
-            else
-            {
-                tails.animator.SetBool("Run", true);
-                passage = true;
+                if (passage)
+                {
+                    tails.animator.SetBool("Run", false);
+                    passage = false;
+                }
+                else
+                {
+                    tails.animator.SetBool("Run", true);
+                    passage = true;
+                }
             }
         }
         animator.SetInteger("Color",colorInt);
+        colorFix = colorInt;
         /*AnimatorClipInfo[] tutu = this.animator.GetCurrentAnimatorClipInfo(0);
         Debug.Log(tutu[0].clip.name);
         Debug.Log(tutu[0].clip.length);*/

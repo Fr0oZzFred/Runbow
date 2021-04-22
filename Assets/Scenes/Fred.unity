@@ -136,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 5138578581019581662, guid: 3ce91527db4fde24099ab3b5fc74c95e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5406176712333783894, guid: 3ce91527db4fde24099ab3b5fc74c95e,
         type: 3}
@@ -545,6 +545,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Unicorn
       objectReference: {fileID: 0}
+    - target: {fileID: 5077575371301220413, guid: 85d3003bc70d8c14b8d6fa012f0a0332,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7238347468599415019, guid: 85d3003bc70d8c14b8d6fa012f0a0332,
         type: 3}
       propertyPath: m_Sprite
@@ -696,7 +701,7 @@ PrefabInstance:
     - target: {fileID: 7676820249268635016, guid: 391ee792750992747ab0e6e666a8c900,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391ee792750992747ab0e6e666a8c900, type: 3}

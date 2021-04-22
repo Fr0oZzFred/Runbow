@@ -161,20 +161,36 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ChangeSprite(int colorInt)
     {
-        if (passage)
+        if(this.MoveStates == MoveState.Jump)
         {
-            tails.animator.SetBool("Run", true);
-            passage = false;
+            if (passage)
+            {
+                tails.animator.SetBool("JumpFix", false);
+                passage = false;
+            }
+            else
+            {
+                tails.animator.SetBool("JumpFix", true);
+                passage = true;
+            }
         }
         else
         {
-            tails.animator.SetBool("Run", false);
-            passage = true;
+            if (passage)
+            {
+                tails.animator.SetBool("Run", false);
+                passage = false;
+            }
+            else
+            {
+                tails.animator.SetBool("Run", true);
+                passage = true;
+            }
         }
         animator.SetInteger("Color",colorInt);
-        AnimatorClipInfo[] tutu = this.animator.GetCurrentAnimatorClipInfo(0);
+        /*AnimatorClipInfo[] tutu = this.animator.GetCurrentAnimatorClipInfo(0);
         Debug.Log(tutu[0].clip.name);
-        Debug.Log(tutu[0].clip.length);
+        Debug.Log(tutu[0].clip.length);*/
         //spriteRenderer.sprite = playerSkins[colorInt];
     }
 

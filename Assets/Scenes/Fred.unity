@@ -371,7 +371,7 @@ MonoBehaviour:
   candyPerLevel: 0
   totalLevel: 20
   totalLevelDone: 0
-  numberOfTails: 1
+  numberOfTails: 0
   level: 0000000000000000000000000000000000000000
   tailsCondition: 01000000030000000500000007000000090000000b0000000d0000000f0000001100000014000000
   index: 0

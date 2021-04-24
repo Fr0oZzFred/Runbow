@@ -6,7 +6,7 @@ public class CréditBehaviour : MonoBehaviour
 {   //frederic 
     public int speed;
     public AudioSource creditTheme;
-    public float time = 80;
+    public GameObject tyfp;
 
     private void Start()
     {
@@ -16,13 +16,12 @@ public class CréditBehaviour : MonoBehaviour
 
     private void Update()
     {
-        time -= Time.deltaTime;
         Move();
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             ScenesManager.instance.LoadMainMenu();
         }
-        if(time < -40)
+        if(!creditTheme.isPlaying)
         {
             ScenesManager.instance.LoadMainMenu();
         }
@@ -30,7 +29,7 @@ public class CréditBehaviour : MonoBehaviour
 
     private void Move()
     {
-        if (time > 0)
+        if (tyfp.transform.position.y < Screen.height * 0.5f)
         {
             Vector2 pos = this.transform.position;
             pos.y += speed * Time.deltaTime;

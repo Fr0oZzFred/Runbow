@@ -11,6 +11,7 @@ public class CréditBehaviour : MonoBehaviour
     private void Start()
     {
         SoundManager.instance.mainMenuTheme.Stop();
+        SoundManager.instance.goodGameOverSound.Stop();
         creditTheme.Play();
     }
 

@@ -107,11 +107,11 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         choixPersonages.SetActive(true);
-        if(GameManager.instance.achatPegasus ==1)
+        if(GameManager.instance.achatPegasus >=1)
         {
             buttonAchatPegasus.SetActive(false);
         }
-        if (GameManager.instance.achatBluePegasus == 1)
+        if (GameManager.instance.achatBluePegasus >= 1)
         {
             buttonAchatBluePegasus.SetActive(false);
         }
@@ -188,7 +188,7 @@ public class UIManager : MonoBehaviour
     
     public void UnlockPegasus(int nombreRequis)
     {
-        if (GameManager.instance.achatPegasus < 1)
+        if (GameManager.instance.achatPegasus < 1 && nombreRequis <= GameManager.instance.candy)
         {
             GameManager.instance.addCandy(nombreRequis * -1);
             GameManager.instance.candyPerLevel = 0;
@@ -198,7 +198,7 @@ public class UIManager : MonoBehaviour
     }
     public void UnlockbluePegasus(int nombreRequis)
     {
-        if (GameManager.instance.achatBluePegasus < 1)
+        if (GameManager.instance.achatBluePegasus < 1 && nombreRequis <= GameManager.instance.candy)
         {
             GameManager.instance.addCandy(nombreRequis * -1);
             GameManager.instance.candyPerLevel = 0;

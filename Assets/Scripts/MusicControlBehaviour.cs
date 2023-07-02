@@ -6,7 +6,7 @@ public class MusicControlBehaviour : MonoBehaviour
 {
     public AudioSource[] audioSource;
 
-    private float musicVolume = 1;
+    private float musicVolume = 0.5f;
 
     private void Update()
     {
